@@ -14,7 +14,7 @@
       title: "KISMET",
       builder: "Lürssen Yachts • Exterior by Reymond Langton",
       category: "Mega Yacht (122M / 400FT)",
-      videoSrc: "Public/_150M%20KISMET%20Mega%20Yacht%20by%20Lurssen%20Yachts%20_%20Luxury%20Mega%20Yacht%20for%20Charter%20_%20Mania%20Luxury(1080P_HD).mp4",
+      videoSrc: "Public/Fleet/TRITONE%20_%2027m_90_%20_%20Admiral%20-%20Yacht%20for%20Charter(1080P_HD).mp4",
       description: "The undisputed crown jewel of world superyachts. Engineered in Germany by Lürssen, KISMET showcases a multi-level wellness hammam, certified commercial helipad, outdoor deck cinema, and underwater Nemo lounge for submarine viewing.",
       specs: [
         { label: "Length", value: "122m / 400ft" },
@@ -313,4 +313,3 @@
     });
   });
 })();
-
