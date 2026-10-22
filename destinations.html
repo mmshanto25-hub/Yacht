@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070f17">
+  <meta name="description" content="Discover world-class private yacht charter destinations. Curated day-by-day itineraries for the French Riviera, Amalfi Coast, The Bahamas, Greek Cyclades, and Newport.">
+  <title>Destinations — Aventis Yacht Charters &amp; Curated Itineraries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/destinations.css">
+  <link rel="stylesheet" href="css/modals.css">
+
+  <!-- Modular Scripts -->
+  <script src="js/global.js" defer></script>
+  <script src="js/video-manager.js" defer></script>
+  <script src="js/destinations.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Top Ocean Ticker -->
+  <div class="top-status-bar" aria-label="Global charter status">
+    <div class="container status-bar-inner">
+      <span class="status-item"><i class="status-beacon"></i> 24/7 Global Brokerage Concierge</span>
+      <span class="status-item">Newport <strong>41°29′N 71°19′W</strong> • 68°F Calm</span>
+      <span class="status-item">Monaco <strong>43°44′N 7°25′E</strong> • 74°F Fair</span>
+      <span class="status-item status-badge-hot">7 Featured Mega Yachts Active</span>
+      <a class="status-link" href="contact.html">Speak to a Broker ↗</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="main-header">
+    <a class="brand" href="index.html" aria-label="Aventis Yacht Charters home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="24" cy="24" r="3" fill="currentColor"/>
+        <path d="M24 3v11m0 20v11M3 24h11m20 0h11M9.15 9.15l7.78 7.78m14.14 14.14 7.78 7.78m0-29.7-7.78 7.78M16.93 31.07l-7.78 7.78" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="m24 9 3 12-3 3-3-3 3-12Zm15 15-12 3-3-3 3-3 12 3ZM24 39l-3-12 3-3 3 3-3 12ZM9 24l12-3 3 3-3 3-12-3Z" fill="currentColor" opacity=".78"/>
+      </svg>
+      <span class="brand-type"><strong>AVENTIS</strong><small>YACHT CHARTERS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="destinations.html" class="active">Destinations</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-open" type="button" aria-label="Open yacht search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+      </button>
+      <button class="button button-gold header-book" type="button" data-open-booking>Book a Yacht <span aria-hidden="true">↗</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="index.html">Home</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="destinations.html" class="active">Destinations</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="button button-gold" type="button" data-open-booking>Book a Yacht <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- SUBPAGE HERO BANNER -->
+    <section class="subpage-hero" aria-label="Aventis Destinations">
+      <video class="subpage-hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="Public/Fleet/ENERGY%20_%2077.80M_255_2___%20Amels%20-%20Yacht%20for%20Sale(1080P_HD).mp4" type="video/mp4">
+      </video>
+      <div class="subpage-hero-shade"></div>
+      <div class="container subpage-hero-content">
+        <p class="eyebrow"><span></span>Global Cruising Grounds</p>
+        <h1>Extraordinary Horizons</h1>
+        <p>Drop anchor in untouched emerald anchorages, glide between glamorous Mediterranean harbors, or drift above translucent Bahamian sandbars. Where will the sea take you?</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="button button-gold" href="#dest-collection">View All Destinations <span aria-hidden="true">↓</span></a>
+          <button class="button button-glass" type="button" data-open-booking>Request Custom Chart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS COLLECTION -->
+    <section class="destinations-section section-light" id="dest-collection">
+      <div class="container">
+        <div class="destinations-filter-bar reveal">
+          <div class="destination-tabs" role="group" aria-label="Filter destinations by region">
+            <button class="dest-tab active" type="button" data-dest-filter="all">All Regions (6)</button>
+            <button class="dest-tab" type="button" data-dest-filter="med">The Mediterranean &amp; Riviera</button>
+            <button class="dest-tab" type="button" data-dest-filter="bahamas">The Bahamas &amp; Caribbean</button>
+            <button class="dest-tab" type="button" data-dest-filter="newengland">Newport &amp; New England</button>
+            <button class="dest-tab" type="button" data-dest-filter="greece">Greek Cyclades</button>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-button dest-prev" type="button" aria-label="Previous destination">←</button>
+            <button class="slider-button dest-next" type="button" aria-label="Next destination">→</button>
+          </div>
+        </div>
+
+        <!-- Destination Cards Slider -->
+        <div class="destinations-slider-wrapper reveal">
+          <div class="destinations-slider" id="destinations-slider" tabindex="0">
+            
+            <article class="destination-card" data-region="med">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=850&q=85" alt="French Riviera yacht harbor" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">Côte d'Azur, France &amp; Monaco</span>
+                <h3>French Riviera</h3>
+                <p class="dest-desc">Glamorous Port Hercules, Cap d'Antibes private bays, Cannes film festivals, and world-renowned Club 55 lunches in Pampelonne.</p>
+                <div class="dest-meta">
+                  <span>Season: May – Oct</span>
+                  <span>Ideal: 7 – 10 Days</span>
+                </div>
+                <a href="#itinerary-riviera" aria-label="Explore French Riviera itinerary">↗</a>
+              </div>
+            </article>
+
+            <article class="destination-card" data-region="med">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=850&q=85" alt="Amalfi coast cliffs" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">Campania, Italy</span>
+                <h3>Amalfi Coast &amp; Capri</h3>
+                <p class="dest-desc">Towering lemon-scented cliffs of Positano, cruising beneath the Faraglioni arches, and romantic sunset dinners in Ravello.</p>
+                <div class="dest-meta">
+                  <span>Season: May – Sep</span>
+                  <span>Ideal: 7 Days</span>
+                </div>
+                <a href="contact.html" aria-label="Explore Amalfi Coast itinerary">↗</a>
+              </div>
+            </article>
+
+            <article class="destination-card" data-region="bahamas">
+              <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=850&q=85" alt="Turquoise Caribbean water and sandbars" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">Caribbean Sanctuary</span>
+                <h3>The Bahamas &amp; Exumas</h3>
+                <p class="dest-desc">Crystal turquoise sandbars, Thunderball Grotto snorkeling, swimming with nurse sharks, and Harbour Island pink beaches.</p>
+                <div class="dest-meta">
+                  <span>Season: Nov – May</span>
+                  <span>Ideal: 7 – 14 Days</span>
+                </div>
+                <a href="#itinerary-bahamas" aria-label="Explore Bahamas itinerary">↗</a>
+              </div>
+            </article>
+
+            <article class="destination-card" data-region="greece">
+              <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=850&q=85" alt="Greek Cyclades islands" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">Aegean Sea, Greece</span>
+                <h3>The Greek Cyclades</h3>
+                <p class="dest-desc">Ancient Delos, energetic Mykonos beach clubs, Santorini's dramatic volcanic caldera, and uninhabited Koufonisia coves.</p>
+                <div class="dest-meta">
+                  <span>Season: Jun – Sep</span>
+                  <span>Ideal: 10 – 14 Days</span>
+                </div>
+                <a href="#itinerary-greece" aria-label="Explore Greek Cyclades itinerary">↗</a>
+              </div>
+            </article>
+
+            <article class="destination-card" data-region="newengland">
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=850&q=85" alt="New England coast" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">Rhode Island &amp; Massachusetts</span>
+                <h3>Newport &amp; Nantucket</h3>
+                <p class="dest-desc">Historic sailing capital, ocean cliffs, fresh Atlantic lobster bakes, and peaceful Martha’s Vineyard anchorages.</p>
+                <div class="dest-meta">
+                  <span>Season: Jun – Oct</span>
+                  <span>Ideal: 7 – 10 Days</span>
+                </div>
+                <a href="contact.html" aria-label="Explore Newport itinerary">↗</a>
+              </div>
+            </article>
+
+            <article class="destination-card" data-region="bahamas">
+              <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=850&q=85" alt="St. Barths Caribbean" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">French West Indies</span>
+                <h3>St. Barths &amp; Virgin Gorda</h3>
+                <p class="dest-desc">The chic capital of Caribbean winter yachting. Designer shopping in Gustavia, The Baths granite boulders, and quiet Anguilla bays.</p>
+                <div class="dest-meta">
+                  <span>Season: Dec – Apr</span>
+                  <span>Ideal: 7 – 10 Days</span>
+                </div>
+                <a href="contact.html" aria-label="Explore St. Barths itinerary">↗</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- 1. FEATURED ITINERARY: FRENCH RIVIERA & MONACO -->
+        <div class="itinerary-feature-card reveal" id="itinerary-riviera">
+          <div class="itinerary-grid">
+            <div class="itinerary-copy">
+              <p class="eyebrow eyebrow-dark"><span></span>Bespoke 7-Day Chart</p>
+              <h3>French Riviera &amp; Monaco Odyssey</h3>
+              <p>Experience the ultimate Mediterranean week onboard your private superyacht. Hand-curated by our senior captains to avoid crowded ports and maximize tranquil anchorage hours.</p>
+              <div class="itinerary-stats-row">
+                <div class="itinerary-stat"><strong>145 NM</strong><span>Total Distance</span></div>
+                <div class="itinerary-stat"><strong>7 Days</strong><span>Recommended</span></div>
+                <div class="itinerary-stat"><strong>May – Oct</strong><span>Peak Season</span></div>
+                <div class="itinerary-stat"><strong>KISMET / LANA</strong><span>Suggested Yacht</span></div>
+              </div>
+              <button class="button button-gold" type="button" data-open-booking>Request This Itinerary <span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="itinerary-timeline">
+              <ol class="itinerary-days-list">
+                <li>
+                  <span class="day-num">Day 01</span>
+                  <div class="day-content">
+                    <h4>Monaco Embarkation</h4>
+                    <p>Board in Port Hercules. Welcome champagne, safety briefing, and dinner overlooking the Monte Carlo casino lights.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 02</span>
+                  <div class="day-content">
+                    <h4>Cap d'Antibes &amp; Bay of Billionaires</h4>
+                    <p>Morning passage to Cap d'Antibes. Anchor in emerald waters for Seabob exploration and lunch at Hotel du Cap-Eden-Roc.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 03</span>
+                  <div class="day-content">
+                    <h4>Cannes &amp; Îles de Lérins</h4>
+                    <p>Cruising between Sainte-Marguerite and Saint-Honorat islands. Visit the ancient monastery vineyard and dine on fresh sea urchin.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 04</span>
+                  <div class="day-content">
+                    <h4>Saint-Tropez &amp; Pampelonne Beach</h4>
+                    <p>Tender transfer to Club 55 for celebratory beachside lunch, followed by boutique shopping in historic Saint-Tropez.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 05</span>
+                  <div class="day-content">
+                    <h4>Porquerolles Nature Sanctuary</h4>
+                    <p>Drop anchor in untouched national park bays. Sunrise paddleboarding and evening open-air cinema on the yacht's sundeck.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 06</span>
+                  <div class="day-content">
+                    <h4>Villefranche-sur-Mer &amp; Eze</h4>
+                    <p>Deep water anchorage beneath the cliffs of medieval Eze. Chef's 7-course farewell tasting dinner with paired Grand Cru wines.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 07</span>
+                  <div class="day-content">
+                    <h4>Monaco Disembarkation</h4>
+                    <p>A leisurely morning cruise past the Monaco cliffs. Farewell breakfast on the aft deck and private helicopter transfer to Nice Airport.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. FEATURED ITINERARY: THE BAHAMAS & EXUMAS -->
+        <div class="itinerary-feature-card reveal" id="itinerary-bahamas" style="margin-top: 40px;">
+          <div class="itinerary-grid">
+            <div class="itinerary-copy">
+              <p class="eyebrow eyebrow-dark"><span></span>Bespoke 7-Day Chart</p>
+              <h3>The Exumas Sandbar Expedition</h3>
+              <p>365 cays surrounded by the clearest water on Earth. Drift across shallow sandbars unreachable by commercial ships, encounter friendly nurse sharks, and swim in Thunderball Grotto.</p>
+              <div class="itinerary-stats-row">
+                <div class="itinerary-stat"><strong>110 NM</strong><span>Total Distance</span></div>
+                <div class="itinerary-stat"><strong>7 Days</strong><span>Recommended</span></div>
+                <div class="itinerary-stat"><strong>Nov – May</strong><span>Peak Season</span></div>
+                <div class="itinerary-stat"><strong>M/Y ONYX / Sunseeker 88</strong><span>Suggested Yacht</span></div>
+              </div>
+              <button class="button button-gold" type="button" data-open-booking>Request This Itinerary <span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="itinerary-timeline">
+              <ol class="itinerary-days-list">
+                <li>
+                  <span class="day-num">Day 01</span>
+                  <div class="day-content">
+                    <h4>Nassau to Highbourne Cay</h4>
+                    <p>Embark at Albany Marina. Cruise 35 NM south to Highbourne Cay. Sunset cocktails with nurse sharks swimming right at the marina docks.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 02</span>
+                  <div class="day-content">
+                    <h4>Norman's Cay &amp; Sunken Plane</h4>
+                    <p>Snorkel the famous WWII DC-3 plane wreck in 10 feet of turquoise water. Afternoon jet-skiing across empty white sand flats.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 03</span>
+                  <div class="day-content">
+                    <h4>Shroud Cay Mangrove River</h4>
+                    <p>Tender through the winding mangrove waterways into the open Exuma Sound. Private beach setup with champagne umbrellas.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 04</span>
+                  <div class="day-content">
+                    <h4>Staniel Cay &amp; Thunderball Grotto</h4>
+                    <p>Swim through the underwater cave featured in James Bond's Thunderball. Visit Big Major Cay to swim with the famous Exuma pigs.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 05</span>
+                  <div class="day-content">
+                    <h4>Compass Cay Nurse Sharks</h4>
+                    <p>Wade into the calm waters of Compass Cay marina with friendly nurse sharks. Fresh conch salad prepared by your chef on the aft deck.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 06</span>
+                  <div class="day-content">
+                    <h4>Warderick Wells Land &amp; Sea Park</h4>
+                    <p>Mooring in the protected Exuma Cays Land &amp; Sea Park. Hike Boo Boo Hill for panoramic views of the sandbar tides.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="day-num">Day 07</span>
+                  <div class="day-content">
+                    <h4>Return to Nassau / Paradise Island</h4>
+                    <p>Morning passage back to Nassau. Gourmet brunch served under way and limousine transfer to the private jet terminal.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEASONAL CRUISING CALENDAR TABLE -->
+    <section class="section-dark" style="padding: 100px 0;">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow"><span></span>Year-Round Navigations</p>
+          <h2>Global Cruising Calendar</h2>
+          <p>Superyacht chartering follows the sun. Use our seasonal guide to align your voyage with ideal sea temperatures and weather.</p>
+        </div>
+        <div class="season-calendar-wrap reveal">
+          <div style="overflow-x:auto;">
+            <table class="season-table" aria-label="Seasonal cruising calendar">
+              <thead>
+                <tr>
+                  <th scope="col">Destination</th>
+                  <th scope="col">Jan – Feb</th>
+                  <th scope="col">Mar – Apr</th>
+                  <th scope="col">May – Jun</th>
+                  <th scope="col">Jul – Aug</th>
+                  <th scope="col">Sep – Oct</th>
+                  <th scope="col">Nov – Dec</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>French Riviera &amp; Monaco</strong></td>
+                  <td>Low Season</td>
+                  <td>Spring Mild</td>
+                  <td><span class="badge-optimal">Optimal</span></td>
+                  <td><span class="badge-optimal">Peak Glamour</span></td>
+                  <td><span class="badge-optimal">Warm &amp; Quiet</span></td>
+                  <td>Winter Port</td>
+                </tr>
+                <tr>
+                  <td><strong>Amalfi Coast &amp; Capri</strong></td>
+                  <td>Low Season</td>
+                  <td>Spring Bloom</td>
+                  <td><span class="badge-optimal">Optimal</span></td>
+                  <td><span class="badge-optimal">Peak Sun</span></td>
+                  <td><span class="badge-optimal">Harvest Season</span></td>
+                  <td>Low Season</td>
+                </tr>
+                <tr>
+                  <td><strong>The Bahamas &amp; Exumas</strong></td>
+                  <td><span class="badge-optimal">Peak Escape</span></td>
+                  <td><span class="badge-optimal">Optimal</span></td>
+                  <td><span class="badge-shoulder">Shoulder</span></td>
+                  <td>Summer Calm</td>
+                  <td>Off Season</td>
+                  <td><span class="badge-optimal">Holiday Peak</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Greek Cyclades</strong></td>
+                  <td>Low Season</td>
+                  <td>Spring Mild</td>
+                  <td><span class="badge-optimal">Optimal</span></td>
+                  <td><span class="badge-optimal">Meltemi Winds</span></td>
+                  <td><span class="badge-optimal">Calm Waters</span></td>
+                  <td>Low Season</td>
+                </tr>
+                <tr>
+                  <td><strong>Newport &amp; New England</strong></td>
+                  <td>Winter Mooring</td>
+                  <td>Spring Prep</td>
+                  <td><span class="badge-shoulder">Early Season</span></td>
+                  <td><span class="badge-optimal">Peak Regatta</span></td>
+                  <td><span class="badge-optimal">Indian Summer</span></td>
+                  <td>Winter Mooring</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Aventis Yacht Charters home">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 3v11m0 20v11M3 24h11m20 0h11M9.15 9.15l7.78 7.78m14.14 14.14 7.78 7.78m0-29.7-7.78 7.78M16.93 31.07l-7.78 7.78" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m24 9 3 12-3 3-3-3 3-12Zm15 15-12 3-3-3 3-3 12 3ZM24 39l-3-12 3-3 3 3-3 12ZM9 24l12-3 3 3-3 3-12-3Z" fill="currentColor" opacity=".78"/></svg>
+          <span class="brand-type"><strong>AVENTIS</strong><small>YACHT CHARTERS</small></span>
+        </a>
+        <p>Crafting extraordinary maritime journeys with bespoke itineraries and world-class hospitality since 1988.</p>
+        <div class="accreditations-row">
+          <span class="cert-pill">MYBA Member</span>
+          <span class="cert-pill">IYBA Certified</span>
+          <span class="cert-pill">SYBAss Partner</span>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h2>The Fleet</h2>
+        <a href="fleet.html">All 7 Vessels</a>
+        <a href="fleet.html">Mega Yachts 100M+</a>
+        <a href="fleet.html">Superyachts &amp; Motor</a>
+        <a href="fleet.html">Day Cruisers &amp; Chase</a>
+      </div>
+      <div class="footer-column">
+        <h2>Destinations</h2>
+        <a href="destinations.html">French Riviera &amp; Monaco</a>
+        <a href="destinations.html">Amalfi Coast &amp; Capri</a>
+        <a href="destinations.html">The Bahamas &amp; Exumas</a>
+        <a href="destinations.html">Greek Cyclades</a>
+      </div>
+      <div class="footer-column footer-concierge">
+        <h2>The Gazette</h2>
+        <p>Receive curated seasonal itineraries and off-market fleet releases.</p>
+        <form class="newsletter-form">
+          <label class="visually-hidden" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Your email address" required>
+          <button type="submit" aria-label="Sign up for the newsletter">→</button>
+        </form>
+        <p class="form-status" aria-live="polite"></p>
+        <a href="tel:+18005559224">+1 (800) 555-YACHT</a>
+        <a href="mailto:charter@aventisyachts.com">charter@aventisyachts.com</a>
+        <span>Commercial Wharf, Newport, RI</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Aventis Yacht Charters. All rights reserved.</span>
+      <div>
+        <a href="contact.html">Privacy Policy</a>
+        <a href="contact.html">Terms of Charter</a>
+        <a href="contact.html">Maritime Safety</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <dialog class="site-dialog search-dialog" id="search-modal" aria-labelledby="search-title">
+    <button class="dialog-close" type="button" aria-label="Close search">×</button>
+    <div class="dialog-inner">
+      <p class="eyebrow"><span></span>Find your next escape</p>
+      <h2 id="search-title">Where will the sea take you?</h2>
+      <form class="search-form">
+        <label class="visually-hidden" for="yacht-search">Search yachts and destinations</label>
+        <input id="yacht-search" type="search" placeholder="Try “Bahamas”, “Monaco”, or “KISMET”">
+        <button type="submit" aria-label="Search">↗</button>
+      </form>
+      <div class="search-chips">
+        <button type="button">French Riviera</button>
+        <button type="button">Bahamas</button>
+        <button type="button">Amalfi</button>
+        <button type="button">Newport</button>
+        <button type="button">Greece</button>
+      </div>
+      <p class="search-result" aria-live="polite"></p>
+    </div>
+  </dialog>
+
+  <dialog class="site-dialog booking-dialog" id="booking-modal" aria-labelledby="booking-title">
+    <button class="dialog-close" type="button" aria-label="Close booking request">×</button>
+    <div class="dialog-inner">
+      <p class="eyebrow"><span></span>Your journey begins here</p>
+      <h2 id="booking-title">Speak with a Charter Broker</h2>
+      <p class="dialog-intro">Tell us a little about the voyage you have in mind. We will curate the ideal yacht, captain, and itinerary.</p>
+      <form class="booking-form">
+        <label>
+          <span>Preferred Vessel</span>
+          <select name="yacht" id="booking-yacht-select">
+            <option value="">Select a yacht</option>
+            <option value="KISMET">KISMET (400 FT / 122M Mega Yacht)</option>
+            <option value="LANA">LANA (351 FT / 107M Mega Yacht)</option>
+            <option value="ENERGY">ENERGY (255 FT / 78M Superyacht)</option>
+            <option value="M/Y ONYX">M/Y ONYX (110 FT Riva Dolcevita)</option>
+            <option value="Sunseeker 88 Yacht">Sunseeker 88 Yacht</option>
+            <option value="Sunseeker 76 Yacht">Sunseeker 76 Yacht</option>
+            <option value="Riva Rivamare">Riva Rivamare (39 FT Day Cruiser)</option>
+            <option value="Open to recommendations">Open to recommendations</option>
+          </select>
+        </label>
+        <label>
+          <span>Destination or Region</span>
+          <input name="destination" placeholder="Where would you like to sail?" required>
+        </label>
+        <div class="form-row">
+          <label>
+            <span>Preferred Dates</span>
+            <input name="dates" placeholder="e.g. Summer 2026 or specific week">
+          </label>
+          <label>
+            <span>Number of Guests</span>
+            <input name="guests" type="number" min="1" max="36" placeholder="e.g. 10">
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Your Name</span>
+            <input name="name" placeholder="Full name" required>
+          </label>
+          <label>
+            <span>Email Address</span>
+            <input name="email" type="email" placeholder="name@domain.com" required>
+          </label>
+        </div>
+        <label>
+          <span>Special Requests</span>
+          <textarea name="requests" rows="3" placeholder="Share anything that would make it extraordinary (private aviation, dive master, dietary requirements...)"></textarea>
+        </label>
+        <button class="button button-gold" type="submit">Prepare my inquiry <span aria-hidden="true">↗</span></button>
+        <p class="form-status" aria-live="polite">This preview prepares your bespoke inquiry.</p>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>
+

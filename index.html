@@ -4,45 +4,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070f17">
-  <meta name="description" content="Bespoke private yacht charters from Newport to the world's most extraordinary destinations. Discover the Aventis difference.">
+  <meta name="description" content="Bespoke private yacht charters from Newport, Monaco, and the Caribbean. Explore our ultra-luxury fleet featuring live video tours, curated itineraries, and world-class crew.">
   <link rel="canonical" href="https://aventisyachts.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Aventis Yacht Charters — Extraordinary Journeys">
-  <meta property="og:description" content="Curated maritime voyages handcrafted for those who demand the finest in luxury yachting.">
+  <meta property="og:description" content="Curated maritime voyages handcrafted for those who demand the finest in luxury yachting. Live video fleet tours.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1920&q=85">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Aventis Yacht Charters — Extraordinary Journeys</title>
+  <title>Aventis Yacht Charters — Extraordinary Journeys &amp; Superyacht Fleet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BoatReservation",
-    "name": "Aventis Yacht Charters",
-    "description": "World-class private luxury yacht charter brokerage based in Newport, Rhode Island.",
-    "url": "https://aventisyachts.com",
-    "telephone": "+1-800-555-9224",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Commercial Wharf",
-      "addressLocality": "Newport",
-      "addressRegion": "RI",
-      "postalCode": "02840",
-      "addressCountry": "US"
-    }
-  }
-  </script>
-  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/fleet.css">
+  <link rel="stylesheet" href="css/destinations.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/modals.css">
+
+  <!-- Modular Scripts -->
+  <script src="js/global.js" defer></script>
+  <script src="js/video-manager.js" defer></script>
+  <script src="js/fleet-data.js" defer></script>
+  <script src="js/destinations.js" defer></script>
+  <script src="js/contact.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="cursor-ring" aria-hidden="true"></div>
 
+  <!-- Top Ocean Ticker -->
+  <div class="top-status-bar" aria-label="Global charter status">
+    <div class="container status-bar-inner">
+      <span class="status-item"><i class="status-beacon"></i> 24/7 Global Brokerage Concierge</span>
+      <span class="status-item">Newport <strong>41°29′N 71°19′W</strong> • 68°F Calm</span>
+      <span class="status-item">Monaco <strong>43°44′N 7°25′E</strong> • 74°F Fair</span>
+      <span class="status-item status-badge-hot">7 Featured Mega Yachts Active</span>
+      <a class="status-link" href="contact.html">Speak to a Broker ↗</a>
+    </div>
+  </div>
+
   <header class="site-header" id="main-header">
-    <a class="brand" href="#home" aria-label="Aventis Yacht Charters home">
+    <a class="brand" href="index.html" aria-label="Aventis Yacht Charters home">
       <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
         <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/>
         <circle cx="24" cy="24" r="3" fill="currentColor"/>
@@ -52,8 +59,12 @@
       <span class="brand-type"><strong>AVENTIS</strong><small>YACHT CHARTERS</small></span>
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#home">Home</a><a href="#fleet">Yachts</a><a href="#destinations">Destinations</a>
-      <a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <div class="header-actions">
       <button class="icon-button search-open" type="button" aria-label="Open yacht search">
@@ -63,44 +74,101 @@
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-      <a href="#home">Home</a><a href="#fleet">Yachts</a><a href="#destinations">Destinations</a>
-      <a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
       <button class="button button-gold" type="button" data-open-booking>Book a Yacht <span aria-hidden="true">↗</span></button>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero-runway" id="hero-runway" aria-label="Aventis private yacht charters">
+    <!-- HERO RUNWAY -->
+    <section class="hero-runway" id="home" aria-label="Aventis private yacht charters">
       <div class="hero-sticky">
         <img class="hero-fallback" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=88" alt="">
-        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=88" aria-hidden="true" tabindex="-1">
-          <source src="Public/Sunseeker%2076%202024%20_%20Lafortune%20Yachts%281080P_60FPS%29.mp4" type="video/mp4">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=88" aria-hidden="true" tabindex="-1">
+          <source src="Public/Hero/Pure%20performance%20on%20the%20water._Advertising%20campaign%20for%20the%20SAY%2052%20by%20SAY%20Carbon%20yachts.__%E2%80%A2%20Project%20Credits__following.lena%20__pabloprietoslife%20__joaquinci%28.mp4" type="video/mp4">
         </video>
         <canvas id="hero-canvas" aria-hidden="true"></canvas>
         <div class="hero-content">
           <div class="hero-stage active" data-stage="0">
-            <p class="eyebrow"><span></span>Bespoke private charters</p>
+            <p class="eyebrow"><span></span>Bespoke private superyachts</p>
             <h1>Extraordinary<br>Journeys</h1>
-            <p class="hero-copy">Curated maritime voyages handcrafted for those who demand the finest in luxury yachting.</p>
-            <div class="hero-buttons"><a class="button button-gold" href="#fleet">Explore the Fleet <span aria-hidden="true">↗</span></a><button class="button button-glass" type="button" data-open-story>Watch Story <span class="play-mini" aria-hidden="true">▶</span></button></div>
+            <p class="hero-copy">Curated maritime voyages handcrafted for those who demand the finest in luxury yachting. Live video tours of world-class vessels.</p>
+            <div class="hero-buttons">
+              <a class="button button-gold" href="fleet.html">Explore the Fleet <span aria-hidden="true">↗</span></a>
+              <button class="button button-glass" type="button" data-open-story>Watch Story <span class="play-mini" aria-hidden="true">▶</span></button>
+            </div>
           </div>
           <div class="hero-stage" data-stage="1" aria-hidden="true">
             <p class="eyebrow"><span></span>Oceanic excellence</p>
             <h2>Unrivaled<br>Freedom</h2>
-            <p class="hero-copy">Chart your own horizon across pristine archipelagos with Michelin-trained private crews.</p>
-            <div class="hero-buttons"><a class="button button-gold" href="#destinations">View Destinations <span aria-hidden="true">↗</span></a><button class="button button-glass" type="button" data-open-booking>Inquire Now</button></div>
+            <p class="hero-copy">Chart your own horizon across pristine archipelagos with Michelin-trained private crews and bespoke itineraries.</p>
+            <div class="hero-buttons">
+              <a class="button button-gold" href="destinations.html">View Destinations <span aria-hidden="true">↗</span></a>
+              <button class="button button-glass" type="button" data-open-booking>Inquire Now</button>
+            </div>
           </div>
           <div class="hero-stage" data-stage="2" aria-hidden="true">
             <p class="eyebrow"><span></span>The pinnacle of luxury</p>
             <h2>Endless<br>Horizons</h2>
-            <p class="hero-copy">Immerse yourself in timeless coastal elegance where world-class service meets absolute serenity.</p>
-            <div class="hero-buttons"><button class="button button-gold" type="button" data-open-booking>Begin Your Journey <span aria-hidden="true">↗</span></button><a class="button button-glass" href="#experience">The Experience</a></div>
+            <p class="hero-copy">Immerse yourself in timeless coastal elegance where world-class service meets absolute serenity on the open water.</p>
+            <div class="hero-buttons">
+              <button class="button button-gold" type="button" data-open-booking>Begin Your Journey <span aria-hidden="true">↗</span></button>
+              <a class="button button-glass" href="experience.html">The Experience</a>
+            </div>
           </div>
         </div>
+
+        <!-- Floating Quick Inquire Bar -->
+        <div class="hero-quick-bar" aria-label="Quick Charter Finder">
+          <form class="quick-bar-form" action="fleet.html" method="get">
+            <div class="quick-field">
+              <span class="quick-label">Destination</span>
+              <select name="destination" aria-label="Select Destination">
+                <option value="all">Any Destination</option>
+                <option value="med">French Riviera &amp; Monaco</option>
+                <option value="amalfi">Amalfi Coast &amp; Capri</option>
+                <option value="bahamas">The Bahamas &amp; Exumas</option>
+                <option value="greece">Greek Cyclades</option>
+                <option value="newport">Newport &amp; New England</option>
+              </select>
+            </div>
+            <div class="quick-divider" aria-hidden="true"></div>
+            <div class="quick-field">
+              <span class="quick-label">Vessel Type</span>
+              <select name="category" aria-label="Select Vessel Type">
+                <option value="all">All Fleet Types (7)</option>
+                <option value="mega">Mega Yachts 100M+</option>
+                <option value="motor">Superyachts &amp; Motor</option>
+                <option value="day-cruiser">Day Cruisers &amp; Chase</option>
+              </select>
+            </div>
+            <div class="quick-divider" aria-hidden="true"></div>
+            <div class="quick-field">
+              <span class="quick-label">Guests</span>
+              <select name="guests" aria-label="Select Number of Guests">
+                <option value="any">Any Party Size</option>
+                <option value="6">Up to 6 Guests</option>
+                <option value="10">8 – 10 Guests</option>
+                <option value="12">12+ Guests (Mega)</option>
+              </select>
+            </div>
+            <button class="button button-gold quick-submit" type="submit">
+              <span>View Fleet Options</span> <span aria-hidden="true">→</span>
+            </button>
+          </form>
+        </div>
+
         <div class="hero-hud">
-          <span class="location"><i aria-hidden="true"></i> Newport, New England</span>
+          <span class="location"><i aria-hidden="true"></i> Newport Wharf &amp; Monaco Quai</span>
           <div class="stage-control" aria-label="Hero story progress">
-            <span class="stage-label is-current" data-hud="0">01</span><span class="stage-label" data-hud="1">02</span><span class="stage-label" data-hud="2">03</span>
+            <span class="stage-label is-current" data-hud="0">01</span>
+            <span class="stage-label" data-hud="1">02</span>
+            <span class="stage-label" data-hud="2">03</span>
             <span class="stage-track"><i id="stage-progress"></i></span>
           </div>
         </div>
@@ -108,145 +176,293 @@
       </div>
     </section>
 
-    <section class="about-section section-light" id="about">
-      <div class="container about-grid">
-        <div class="about-image media-frame reveal">
-          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85" alt="A private yacht gliding across the open water" loading="lazy">
-          <span class="heritage-badge">Since<br>1988</span>
-          <span class="image-caption">A different kind of escape</span>
-        </div>
-        <div class="about-copy reveal">
-          <p class="eyebrow eyebrow-dark"><span></span>Our heritage</p>
-          <h2>A Legacy of Pure<br>Maritime Luxury</h2>
-          <p>For more than three decades, Aventis has set the gold standard in private yacht charters. We pair discreet five-star hospitality with a handpicked fleet and an instinct for the places that stay with you.</p>
-          <a class="text-link" href="#experience">Discover the Aventis difference <span aria-hidden="true">→</span></a>
-          <div class="stats-grid" aria-label="Aventis by the numbers">
-            <div class="stat"><strong><span class="stat-number" data-target="120">0</span><em>+</em></strong><span>Fleet vessels</span></div>
-            <div class="stat"><strong><span class="stat-number" data-target="35">0</span><em>+</em></strong><span>Global destinations</span></div>
-            <div class="stat"><strong><span class="stat-number" data-target="98">0</span><em>%</em></strong><span>Client satisfaction</span></div>
-            <div class="stat"><strong><span class="stat-number" data-target="25">0</span></strong><span>Years of excellence</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="fleet-section section-dark" id="fleet">
+    <!-- FEATURED FLEET SHOWCASE WITH VIDEOS -->
+    <section class="fleet-section section-dark">
       <div class="container">
         <div class="section-heading centered reveal">
-          <p class="eyebrow"><span></span>The Aventis collection</p>
-          <h2>Vessels of Distinction</h2>
-          <p>Each yacht is chosen for its character, its crew, and the rare experiences it makes possible.</p>
+          <p class="eyebrow"><span></span>Featured Superyachts</p>
+          <h2>Live Fleet Previews</h2>
+          <p>Explore a selection of our flagship vessels. Every yacht is presented with an autoplaying high-definition video tour.</p>
         </div>
-        <div class="fleet-toolbar">
-          <div class="fleet-tabs" role="group" aria-label="Filter yachts">
-            <button class="fleet-tab active" type="button" data-filter="all" aria-pressed="true">All vessels</button>
-            <button class="fleet-tab" type="button" data-filter="motor" aria-pressed="false">Motor yachts</button>
-            <button class="fleet-tab" type="button" data-filter="sailing" aria-pressed="false">Sailing yachts</button>
-            <button class="fleet-tab" type="button" data-filter="catamaran" aria-pressed="false">Catamarans</button>
-          </div>
-          <a class="text-link" href="#contact">View the full fleet <span aria-hidden="true">→</span></a>
-        </div>
+
         <div class="fleet-grid">
+          <!-- KISMET -->
+          <article class="yacht-card reveal" data-category="mega">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="KISMET video preview">
+                <source src="Public/Fleet/_150M%20KISMET%20Mega%20Yacht%20by%20Lurssen%20Yachts%20_%20Luxury%20Mega%20Yacht%20for%20Charter%20_%20Mania%20Luxury(1080P_HD).mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Mega Yacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for KISMET" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="kismet" aria-label="View technical details for KISMET">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>KISMET</h3>
+                <span class="yacht-builder-tag">Lürssen</span>
+              </div>
+              <p class="yacht-specs">400 FT / 122M <i>•</i> 12 GUESTS <i>•</i> 9 STATEROOMS <i>•</i> CREW OF 36</p>
+              <p class="yacht-summary">The undisputed pinnacle of charter superyachts. Features a multi-level wellness spa, commercial helipad, outdoor cinema, and underwater Nemo lounge.</p>
+              <div class="yacht-highlights">
+                <span>Helipad</span>
+                <span>Hammam Spa</span>
+                <span>Subsea Lounge</span>
+                <span>Cinema</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$3,000,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="kismet">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="KISMET">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- LANA -->
+          <article class="yacht-card reveal" data-category="mega">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="LANA video preview">
+                <source src="Public/Fleet/Inside%20LANA%20_%20107m%20Benetti%20Luxury%20Superyacht%20Tour(1080P_HD).mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Mega Yacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for LANA" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="lana" aria-label="View technical details for LANA">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>LANA</h3>
+                <span class="yacht-builder-tag">Benetti</span>
+              </div>
+              <p class="yacht-specs">351 FT / 107M <i>•</i> 12 GUESTS <i>•</i> 8 STATEROOMS <i>•</i> CREW OF 33</p>
+              <p class="yacht-summary">One of Benetti's grandest flagships with 2.7m ceiling heights, heated sundeck swimming pool, grand piano salon, and expansive fold-out sea terraces.</p>
+              <div class="yacht-highlights">
+                <span>Sundeck Pool</span>
+                <span>Grand Piano</span>
+                <span>Beach Club</span>
+                <span>Full Hammam</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$1,900,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="lana">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="LANA">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- M/Y ONYX -->
           <article class="yacht-card reveal" data-category="motor">
-            <button class="yacht-image" type="button" data-yacht="meridian" aria-label="View details for The Meridian">
-              <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1000&q=85" alt="Sleek private yacht on open water" loading="lazy">
-              <span class="yacht-category">Motor yacht</span><span class="round-arrow" aria-hidden="true">↗</span>
-            </button>
-            <div class="yacht-info"><h3>The Meridian</h3><p class="yacht-specs">164 FT / 50M <i>•</i> 12 GUESTS <i>•</i> 6 CABINS</p><div class="yacht-rate"><span>Crew of 11</span><strong>From $145,000 <small>/ week</small></strong></div></div>
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="M/Y ONYX video preview">
+                <source src="Public/Fleet/M_Y%20ONYX%20-%20110_%20Riva%20Dolcevita%20Yacht%20For%20Sale(1080P_HD).mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Motor Yacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for M/Y ONYX" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="onyx" aria-label="View technical details for M/Y ONYX">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>M/Y ONYX</h3>
+                <span class="yacht-builder-tag">Riva 110' Dolcevita</span>
+              </div>
+              <p class="yacht-specs">110 FT / 33.5M <i>•</i> 10 GUESTS <i>•</i> 5 CABINS <i>•</i> CREW OF 5</p>
+              <p class="yacht-summary">The ultimate expression of Italian Riva elegance. Floor-to-ceiling glass salon, panoramic flybridge with bar, Williams jet tender, and 26-knot performance.</p>
+              <div class="yacht-highlights">
+                <span>Panoramic Salon</span>
+                <span>Flybridge Bar</span>
+                <span>Jet Tender</span>
+                <span>26 Knots</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$145,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="onyx">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="M/Y ONYX">Book Yacht</button>
+              </div>
+            </div>
           </article>
-          <article class="yacht-card reveal" data-category="sailing">
-            <button class="yacht-image" type="button" data-yacht="ocean-breeze" aria-label="View details for Ocean Breeze">
-              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85" alt="A sailing yacht on a blue-water passage" loading="lazy">
-              <span class="yacht-category">Sailing yacht</span><span class="round-arrow" aria-hidden="true">↗</span>
-            </button>
-            <div class="yacht-info"><h3>Ocean Breeze</h3><p class="yacht-specs">120 FT / 36M <i>•</i> 8 GUESTS <i>•</i> 4 CABINS</p><div class="yacht-rate"><span>Crew of 6</span><strong>From $85,000 <small>/ week</small></strong></div></div>
-          </article>
-          <article class="yacht-card reveal" data-category="catamaran">
-            <button class="yacht-image" type="button" data-yacht="aqua-vida" aria-label="View details for Aqua Vida">
-              <img src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?auto=format&fit=crop&w=1000&q=85" alt="A luxury catamaran anchored in a turquoise bay" loading="lazy">
-              <span class="yacht-category">Luxury catamaran</span><span class="round-arrow" aria-hidden="true">↗</span>
-            </button>
-            <div class="yacht-info"><h3>Aqua Vida</h3><p class="yacht-specs">82 FT / 25M <i>•</i> 10 GUESTS <i>•</i> 5 CABINS</p><div class="yacht-rate"><span>Crew of 4</span><strong>From $65,000 <small>/ week</small></strong></div></div>
-          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a class="button button-gold" href="fleet.html">View All 7 Fleet Vessels &amp; Full Specs <span aria-hidden="true">→</span></a>
         </div>
       </div>
     </section>
 
-    <section class="experience-section" id="experience">
+    <!-- DESTINATIONS TEASER -->
+    <section class="destinations-section section-light">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow eyebrow-dark"><span></span>Uncharted Coastlines</p>
+          <h2>Extraordinary Horizons</h2>
+          <p>From the glamour of Port Hercules and Saint-Tropez to the secluded turquoise lagoons of the Exumas and historic Newport.</p>
+        </div>
+        
+        <div class="destinations-slider-wrapper reveal">
+          <div class="destinations-slider" tabindex="0">
+            <article class="destination-card">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=850&q=85" alt="French Riviera" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">Côte d'Azur &amp; Monaco</span>
+                <h3>French Riviera</h3>
+                <p class="dest-desc">Port Hercules, Cap d'Antibes private bays, and world-renowned Club 55 lunches in Pampelonne.</p>
+                <a href="destinations.html" aria-label="Explore French Riviera">↗</a>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=850&q=85" alt="The Bahamas" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">Caribbean Sanctuary</span>
+                <h3>The Bahamas &amp; Exumas</h3>
+                <p class="dest-desc">Crystal turquoise sandbars, Thunderball Grotto snorkeling, and Harbour Island pink beaches.</p>
+                <a href="destinations.html" aria-label="Explore Bahamas">↗</a>
+              </div>
+            </article>
+
+            <article class="destination-card">
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=850&q=85" alt="New England" loading="lazy">
+              <div class="destination-shade"></div>
+              <div class="destination-info">
+                <span class="dest-region-tag">Rhode Island, USA</span>
+                <h3>Newport &amp; Nantucket</h3>
+                <p class="dest-desc">Historic sailing capital, ocean cliffs, fresh Atlantic lobster bakes, and peaceful island anchorages.</p>
+                <a href="destinations.html" aria-label="Explore Newport">↗</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+          <a class="button button-gold" href="destinations.html">Explore Detailed Itineraries &amp; Charts <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE EXPERIENCE TEASER -->
+    <section class="experience-section">
       <div class="experience-image">
-        <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1400&q=85" alt="Clear turquoise water around a secluded island" loading="lazy">
-        <video class="experience-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1400&q=85" aria-hidden="true" tabindex="-1">
-          <source src="Public/M_Y%20ONYX%20-%20110_%20Riva%20Dolcevita%20Yacht%20For%20Sale%281080P_HD%29.mp4" type="video/mp4">
+        <video class="experience-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1400&q=85" aria-label="Superyacht experience video">
+          <source src="Public/M_Y%20ONYX%20-%20110_%20Riva%20Dolcevita%20Yacht%20For%20Sale(1080P_HD).mp4" type="video/mp4">
         </video>
         <button class="experience-sound-toggle" type="button" aria-label="Unmute experience video" aria-pressed="false">
           <svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
           <span>Sound off</span>
         </button>
-        <span class="experience-caption">The world, on your terms</span>
+        <span class="experience-caption"><span class="pulse-dot"></span> M/Y ONYX — Life Onboard</span>
       </div>
       <div class="experience-copy">
         <div class="experience-inner reveal">
-          <p class="eyebrow eyebrow-dark"><span></span>Tailored voyages</p>
-          <h2>Crafted Moments<br>on Open Water</h2>
-          <p class="experience-intro">The details make the journey. We take care of every one.</p>
+          <p class="eyebrow eyebrow-dark"><span></span>Life at Sea</p>
+          <h2>Crafted Moments on Open Water</h2>
+          <p class="experience-intro">A yacht charter is a private, floating sanctuary where every hour is custom-tailored to your exact desires by Michelin-trained chefs and master navigators.</p>
           <ul class="feature-list">
-            <li><span class="feature-icon" aria-hidden="true">✳</span><div><h3>Bespoke itineraries</h3><p>Secluded bays, untouched anchorages, and private harbors—your voyage, your way.</p></div></li>
-            <li><span class="feature-icon" aria-hidden="true">♧</span><div><h3>Exceptional private chefs</h3><p>Thoughtful menus and remarkable dining, tailored to every guest and occasion.</p></div></li>
-            <li><span class="feature-icon" aria-hidden="true">⌁</span><div><h3>Water toys &amp; tenders</h3><p>From seabobs and hydrofoils to diving gear and chase tenders.</p></div></li>
-            <li><span class="feature-icon" aria-hidden="true">✧</span><div><h3>Masterful captains</h3><p>Seasoned navigators who make every passage feel effortless and secure.</p></div></li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">✳</span>
+              <div>
+                <h3>Michelin-Trained Private Chefs</h3>
+                <p>Custom-curated menus based on your personal preference sheet. Farm-to-table seafood and sommelier wine cellars.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">♧</span>
+              <div>
+                <h3>Superyacht Toys &amp; Marine Fleet</h3>
+                <p>Seabobs, Fliteboards, Williams jet tenders, and deep-sea diving gear ready for your command.</p>
+              </div>
+            </li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="destinations-section section-light" id="destinations">
-      <div class="container destinations-grid">
-        <div class="destinations-copy reveal">
-          <p class="eyebrow eyebrow-dark"><span></span>Top destinations</p>
-          <h2>Iconic Places.<br>Extraordinary Journeys.</h2>
-          <p>From Newport's historic coastline to hidden gems around the world, discover breathtaking destinations by sea.</p>
-          <a class="button button-gold" href="#contact">Explore Destinations <span aria-hidden="true">↗</span></a>
-          <div class="slider-controls">
-            <button class="slider-button dest-prev" type="button" aria-label="Previous destination">←</button>
-            <button class="slider-button dest-next" type="button" aria-label="Next destination">→</button>
-          </div>
-        </div>
-        <div class="destinations-slider-wrapper reveal">
-          <div class="destinations-slider" id="destinations-slider" tabindex="0" aria-label="Featured destinations">
-            <article class="destination-card"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=850&q=85" alt="New England coast from the sea" loading="lazy"><div class="destination-shade"></div><div class="destination-info"><span>Rhode Island, USA</span><h3>Newport</h3><a href="#contact" aria-label="Explore Newport">↗</a></div></article>
-            <article class="destination-card"><img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=850&q=85" alt="Turquoise Caribbean water and white sand" loading="lazy"><div class="destination-shade"></div><div class="destination-info"><span>Caribbean</span><h3>The Bahamas</h3><a href="#contact" aria-label="Explore the Bahamas">↗</a></div></article>
-            <article class="destination-card"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=850&q=85" alt="Mediterranean village overlooking the sea" loading="lazy"><div class="destination-shade"></div><div class="destination-info"><span>Europe</span><h3>Mediterranean</h3><a href="#contact" aria-label="Explore the Mediterranean">↗</a></div></article>
+          <div style="margin-top: 28px;">
+            <a class="button button-gold" href="experience.html">Discover the Full Experience <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-banner" aria-label="Plan your bespoke escape">
-      <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=2000&q=85" alt="" loading="lazy">
-      <div class="cta-shade"></div>
-      <div class="container cta-content reveal">
-        <p class="eyebrow"><span></span>Your personal sanctuary</p>
-        <h2>The Ocean Awaits.<br>Plan Your Bespoke Escape.</h2>
-        <button class="button button-gold" type="button" data-open-booking>Inquire with a Charter Broker <span aria-hidden="true">↗</span></button>
+    <!-- HERITAGE TEASER -->
+    <section class="about-section section-light">
+      <div class="container about-grid">
+        <div class="about-image media-frame reveal">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=85" alt="Luxury yacht" loading="lazy">
+          <span class="heritage-badge">Since<br>1988</span>
+          <span class="image-caption">Three Decades of Excellence</span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow eyebrow-dark"><span></span>Our heritage</p>
+          <h2>A Legacy of Pure Maritime Luxury</h2>
+          <p>For more than three decades, Aventis has set the gold standard in private yacht charters. Established at Commercial Wharf in Newport, Rhode Island, and expanded to Monaco and Miami.</p>
+          <div class="stats-grid" aria-label="Aventis by the numbers">
+            <div class="stat"><strong><span class="stat-number" data-target="120">0</span><em>+</em></strong><span>Fleet vessels</span></div>
+            <div class="stat"><strong><span class="stat-number" data-target="35">0</span><em>+</em></strong><span>Destinations</span></div>
+            <div class="stat"><strong><span class="stat-number" data-target="98">0</span><em>%</em></strong><span>Client satisfaction</span></div>
+            <div class="stat"><strong><span class="stat-number" data-target="38">0</span></strong><span>Years excellence</span></div>
+          </div>
+          <div style="margin-top: 28px;">
+            <a class="button button-gold" href="about.html">Read Our Heritage &amp; Standards <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- TESTIMONIALS -->
     <section class="testimonials-section">
       <div class="container testimonial-container reveal">
         <span class="quote-mark" aria-hidden="true">“</span>
         <p class="eyebrow eyebrow-dark"><span></span>Words from our guests</p>
+        
         <div class="testimonial-slide active" data-testimonial="0">
-          <blockquote>“Sailing the Mediterranean with Aventis surpassed every expectation. The crew’s discretion, the culinary artistry, and the vessel's immaculate finish made it an unforgettable journey.”</blockquote>
-          <div class="author"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&h=160&q=80" alt="" loading="lazy"><div><strong>Lady Emily Vance</strong><span>Monaco Charter Client</span></div></div>
+          <blockquote>“Chartering KISMET through Aventis was an unparalleled experience. The crew’s discretion, the culinary artistry, and having the live video tour beforehand gave us total confidence. Truly a masterclass in luxury yachting.”</blockquote>
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=160&h=160&q=80" alt="" loading="lazy">
+            <div><strong>Lady Emily Vance</strong><span>Monaco &amp; French Riviera Charter</span></div>
+          </div>
         </div>
+
         <div class="testimonial-slide" data-testimonial="1" aria-hidden="true">
-          <blockquote>“From the first conversation to our last morning at anchor, every detail felt considered. It was the most effortless week our family has ever spent together.”</blockquote>
-          <div class="author"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&h=160&q=80" alt="" loading="lazy"><div><strong>James R. Whitmore</strong><span>Newport Charter Client</span></div></div>
+          <blockquote>“From the first conversation in Newport to our final sunset in the Exumas on M/Y ONYX, every detail was effortless. The chef accommodated every dietary desire of our three children without skipping a beat.”</blockquote>
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&h=160&q=80" alt="" loading="lazy">
+            <div><strong>James R. Whitmore</strong><span>Bahamas Charter Client</span></div>
+          </div>
         </div>
+
         <div class="testimonial-slide" data-testimonial="2" aria-hidden="true">
-          <blockquote>“A truly personal service. Our captain found quiet coves we would never have discovered, and the onboard hospitality was second to none.”</blockquote>
-          <div class="author"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=160&h=160&q=80" alt="" loading="lazy"><div><strong>Isabelle Laurent</strong><span>French Riviera Charter Client</span></div></div>
+          <blockquote>“A truly bespoke service. Our captain steered us into quiet bays in the Greek Cyclades that other vessels simply didn’t know existed. We have already booked our third summer with Aventis.”</blockquote>
+          <div class="author">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=160&h=160&q=80" alt="" loading="lazy">
+            <div><strong>Isabelle Laurent</strong><span>Greek Cyclades &amp; Amalfi Client</span></div>
+          </div>
         </div>
+
         <div class="testimonial-controls" role="group" aria-label="Choose a testimonial">
           <button class="testimonial-dot active" type="button" aria-label="Testimonial 1" aria-pressed="true"></button>
           <button class="testimonial-dot" type="button" aria-label="Testimonial 2" aria-pressed="false"></button>
@@ -255,56 +471,196 @@
       </div>
     </section>
 
+    <!-- PRESS -->
     <section class="press-section">
-      <div class="container press-inner"><p class="eyebrow eyebrow-dark"><span></span>As seen in</p><div class="press-logos" aria-label="Featured in Architectural Digest, Robb Report, Yachting World, Forbes Life, and Boat International"><span>ARCHITECTURAL<br><b>DIGEST</b></span><span class="robb">ROBB REPORT</span><span class="yachting">YACHTING WORLD</span><span class="forbes">FORBES <i>LIFE</i></span><span class="boat">BOAT<br>INTERNATIONAL</span></div></div>
+      <div class="container press-inner">
+        <p class="eyebrow eyebrow-dark"><span></span>As seen in</p>
+        <div class="press-logos">
+          <span>ARCHITECTURAL<br><b>DIGEST</b></span>
+          <span class="robb">ROBB REPORT</span>
+          <span class="yachting">YACHTING WORLD</span>
+          <span class="forbes">FORBES <i>LIFE</i></span>
+          <span class="boat">BOAT<br>INTERNATIONAL</span>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="contact">
+  <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="#home" aria-label="Aventis Yacht Charters home"><svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 3v11m0 20v11M3 24h11m20 0h11M9.15 9.15l7.78 7.78m14.14 14.14 7.78 7.78m0-29.7-7.78 7.78M16.93 31.07l-7.78 7.78" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m24 9 3 12-3 3-3-3 3-12Zm15 15-12 3-3-3 3-3 12 3ZM24 39l-3-12 3-3 3 3-3 12ZM9 24l12-3 3 3-3 3-12-3Z" fill="currentColor" opacity=".78"/></svg><span class="brand-type"><strong>AVENTIS</strong><small>YACHT CHARTERS</small></span></a>
+        <a class="brand" href="index.html" aria-label="Aventis Yacht Charters home">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 3v11m0 20v11M3 24h11m20 0h11M9.15 9.15l7.78 7.78m14.14 14.14 7.78 7.78m0-29.7-7.78 7.78M16.93 31.07l-7.78 7.78" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m24 9 3 12-3 3-3-3 3-12Zm15 15-12 3-3-3 3-3 12 3ZM24 39l-3-12 3-3 3 3-3 12ZM9 24l12-3 3 3-3 3-12-3Z" fill="currentColor" opacity=".78"/></svg>
+          <span class="brand-type"><strong>AVENTIS</strong><small>YACHT CHARTERS</small></span>
+        </a>
         <p>Crafting extraordinary maritime journeys with bespoke itineraries and world-class hospitality since 1988.</p>
+        <div class="accreditations-row">
+          <span class="cert-pill">MYBA Member</span>
+          <span class="cert-pill">IYBA Certified</span>
+          <span class="cert-pill">SYBAss Partner</span>
+        </div>
       </div>
-      <div class="footer-column"><h2>The Fleet</h2><a href="#fleet">Motor Yachts</a><a href="#fleet">Sailing Yachts</a><a href="#fleet">Luxury Catamarans</a><a href="#fleet">Mega Yachts</a><a href="#fleet">New Additions</a></div>
-      <div class="footer-column"><h2>Destinations</h2><a href="#destinations">Newport &amp; New England</a><a href="#destinations">The Bahamas</a><a href="#destinations">French Riviera</a><a href="#destinations">Amalfi Coast</a><a href="#destinations">Greek Cyclades</a></div>
-      <div class="footer-column footer-concierge"><h2>Charter Concierge</h2><p>Receive curated seasonal itineraries.</p>
-        <form class="newsletter-form"><label class="visually-hidden" for="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Sign up for the newsletter">→</button></form><p class="form-status" aria-live="polite"></p>
-        <a href="tel:+18005559224">+1 (800) 555-YACHT</a><a href="mailto:charter@aventisyachts.com">charter@aventisyachts.com</a><span>Commercial Wharf, Newport, RI</span>
+      <div class="footer-column">
+        <h2>The Fleet</h2>
+        <a href="fleet.html">All 7 Vessels</a>
+        <a href="fleet.html">Mega Yachts 100M+</a>
+        <a href="fleet.html">Superyachts &amp; Motor</a>
+        <a href="fleet.html">Day Cruisers &amp; Chase</a>
+        <a href="fleet.html">KISMET (122M)</a>
+        <a href="fleet.html">LANA (107M)</a>
+      </div>
+      <div class="footer-column">
+        <h2>Destinations</h2>
+        <a href="destinations.html">French Riviera &amp; Monaco</a>
+        <a href="destinations.html">Amalfi Coast &amp; Capri</a>
+        <a href="destinations.html">The Bahamas &amp; Exumas</a>
+        <a href="destinations.html">Greek Cyclades</a>
+        <a href="destinations.html">Newport &amp; Nantucket</a>
+      </div>
+      <div class="footer-column footer-concierge">
+        <h2>The Gazette</h2>
+        <p>Receive curated seasonal itineraries and off-market fleet releases.</p>
+        <form class="newsletter-form">
+          <label class="visually-hidden" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Your email address" required>
+          <button type="submit" aria-label="Sign up for the newsletter">→</button>
+        </form>
+        <p class="form-status" aria-live="polite"></p>
+        <a href="tel:+18005559224">+1 (800) 555-YACHT</a>
+        <a href="mailto:charter@aventisyachts.com">charter@aventisyachts.com</a>
+        <span>Commercial Wharf, Newport, RI</span>
       </div>
     </div>
-    <div class="container footer-bottom"><span>© 2026 Aventis Yacht Charters. All rights reserved.</span><div><a href="#contact">Privacy Policy</a><a href="#contact">Terms of Charter</a><a href="#contact">Maritime Safety</a></div></div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Aventis Yacht Charters. All rights reserved.</span>
+      <div>
+        <a href="contact.html">Privacy Policy</a>
+        <a href="contact.html">Terms of Charter</a>
+        <a href="contact.html">Maritime Safety</a>
+      </div>
+    </div>
   </footer>
 
+  <!-- MODALS -->
   <dialog class="site-dialog search-dialog" id="search-modal" aria-labelledby="search-title">
     <button class="dialog-close" type="button" aria-label="Close search">×</button>
-    <div class="dialog-inner"><p class="eyebrow"><span></span>Find your next escape</p><h2 id="search-title">Where will the sea take you?</h2>
-      <form class="search-form"><label class="visually-hidden" for="yacht-search">Search yachts and destinations</label><input id="yacht-search" type="search" placeholder="Try “Bahamas” or “motor yacht”"><button type="submit" aria-label="Search">↗</button></form>
-      <div class="search-chips"><button type="button">Bahamas</button><button type="button">50m+ Motor Yachts</button><button type="button">Summer in Greece</button><button type="button">Catamarans</button></div>
+    <div class="dialog-inner">
+      <p class="eyebrow"><span></span>Find your next escape</p>
+      <h2 id="search-title">Where will the sea take you?</h2>
+      <form class="search-form">
+        <label class="visually-hidden" for="yacht-search">Search yachts and destinations</label>
+        <input id="yacht-search" type="search" placeholder="Try “KISMET”, “Bahamas”, “Riva”, or “Monaco”">
+        <button type="submit" aria-label="Search">↗</button>
+      </form>
+      <div class="search-chips">
+        <button type="button">KISMET</button>
+        <button type="button">LANA</button>
+        <button type="button">ENERGY</button>
+        <button type="button">M/Y ONYX</button>
+        <button type="button">Sunseeker 88</button>
+        <button type="button">Rivamare</button>
+        <button type="button">French Riviera</button>
+      </div>
       <p class="search-result" aria-live="polite"></p>
     </div>
   </dialog>
 
   <dialog class="site-dialog booking-dialog" id="booking-modal" aria-labelledby="booking-title">
     <button class="dialog-close" type="button" aria-label="Close booking request">×</button>
-    <div class="dialog-inner"><p class="eyebrow"><span></span>Your journey begins here</p><h2 id="booking-title">Speak with a Charter Broker</h2><p class="dialog-intro">Tell us a little about the escape you have in mind.</p>
+    <div class="dialog-inner">
+      <p class="eyebrow"><span></span>Your journey begins here</p>
+      <h2 id="booking-title">Speak with a Charter Broker</h2>
+      <p class="dialog-intro">Tell us a little about the voyage you have in mind. We will curate the ideal yacht, captain, and itinerary.</p>
       <form class="booking-form">
-        <label>Destination<input name="destination" placeholder="Where would you like to go?" required></label>
-        <label>Yacht preference<select name="yacht"><option value="">Select a style</option><option>Motor yacht</option><option>Sailing yacht</option><option>Luxury catamaran</option><option>Open to recommendations</option></select></label>
-        <div class="form-row"><label>Charter dates<input name="dates" placeholder="Your preferred dates"></label><label>Number of guests<input name="guests" type="number" min="1" max="30" placeholder="e.g. 8"></label></div>
-        <label>Special requests<textarea name="requests" rows="3" placeholder="Share anything that would make it extraordinary"></textarea></label>
+        <label>
+          <span>Preferred Vessel</span>
+          <select name="yacht" id="booking-yacht-select">
+            <option value="">Select a yacht</option>
+            <option value="KISMET">KISMET (400 FT / 122M Mega Yacht)</option>
+            <option value="LANA">LANA (351 FT / 107M Mega Yacht)</option>
+            <option value="ENERGY">ENERGY (255 FT / 78M Superyacht)</option>
+            <option value="M/Y ONYX">M/Y ONYX (110 FT Riva Dolcevita)</option>
+            <option value="Sunseeker 88 Yacht">Sunseeker 88 Yacht</option>
+            <option value="Sunseeker 76 Yacht">Sunseeker 76 Yacht</option>
+            <option value="Riva Rivamare">Riva Rivamare (39 FT Day Cruiser)</option>
+            <option value="Open to recommendations">Open to recommendations</option>
+          </select>
+        </label>
+        <label>
+          <span>Destination or Region</span>
+          <input name="destination" placeholder="Where would you like to sail?" required>
+        </label>
+        <div class="form-row">
+          <label>
+            <span>Preferred Dates</span>
+            <input name="dates" placeholder="e.g. Summer 2026 or specific week">
+          </label>
+          <label>
+            <span>Number of Guests</span>
+            <input name="guests" type="number" min="1" max="36" placeholder="e.g. 10">
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Your Name</span>
+            <input name="name" placeholder="Full name" required>
+          </label>
+          <label>
+            <span>Email Address</span>
+            <input name="email" type="email" placeholder="name@domain.com" required>
+          </label>
+        </div>
+        <label>
+          <span>Special Requests</span>
+          <textarea name="requests" rows="3" placeholder="Share anything that would make it extraordinary (private aviation, dive master, dietary requirements...)"></textarea>
+        </label>
         <button class="button button-gold" type="submit">Prepare my inquiry <span aria-hidden="true">↗</span></button>
-        <p class="form-status" aria-live="polite">This preview does not send or store your details.</p>
+        <p class="form-status" aria-live="polite">This preview prepares your bespoke inquiry.</p>
       </form>
     </div>
   </dialog>
+
   <dialog class="site-dialog story-dialog" id="story-modal" aria-labelledby="story-title">
     <button class="dialog-close" type="button" aria-label="Close story">×</button>
-    <div class="story-content"><p class="eyebrow"><span></span>The Aventis experience</p><h2 id="story-title">A world of your own.</h2><p>Unhurried mornings. Secret anchorages. A crew who knows just when to appear—and when to let the moment be yours.</p><button class="button button-gold" type="button" data-open-booking>Plan your escape <span aria-hidden="true">↗</span></button></div>
+    <div class="story-content">
+      <p class="eyebrow"><span></span>The Aventis experience</p>
+      <h2 id="story-title">A world of your own.</h2>
+      <p>Unhurried mornings. Secret anchorages. A crew who knows just when to appear—and when to let the moment be yours.</p>
+      <button class="button button-gold" type="button" data-open-booking>Plan your escape <span aria-hidden="true">↗</span></button>
+    </div>
   </dialog>
+
   <dialog class="site-dialog yacht-dialog" id="yacht-modal" aria-labelledby="yacht-title">
     <button class="dialog-close" type="button" aria-label="Close yacht details">×</button>
-    <div class="yacht-dialog-content"><img id="yacht-modal-image" src="" alt=""><div class="yacht-dialog-copy"><p class="eyebrow"><span></span>In the Aventis collection</p><h2 id="yacht-title"></h2><p id="yacht-modal-description"></p><button class="button button-gold" type="button" data-open-booking>Ask about this yacht <span aria-hidden="true">↗</span></button></div></div>
+    <div class="yacht-dialog-content">
+      <div class="yacht-modal-media-wrap">
+        <video id="yacht-modal-video" autoplay loop playsinline muted controls preload="auto">
+          <source src="" type="video/mp4">
+        </video>
+        <div class="yacht-modal-media-overlay">
+          <span class="yacht-category" id="yacht-modal-category"></span>
+          <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+        </div>
+      </div>
+      <div class="yacht-dialog-copy">
+        <p class="eyebrow"><span></span>In the Aventis collection</p>
+        <h2 id="yacht-title"></h2>
+        <span class="yacht-modal-builder" id="yacht-modal-builder"></span>
+        <div class="yacht-modal-specs-grid" id="yacht-modal-specs"></div>
+        <p id="yacht-modal-description"></p>
+        <div class="yacht-modal-features" id="yacht-modal-features"></div>
+        <div class="yacht-modal-rate-box">
+          <span class="modal-rate-label">Charter Rate</span>
+          <strong id="yacht-modal-rate"></strong>
+        </div>
+        <div class="yacht-modal-buttons">
+          <button class="button button-gold" id="yacht-modal-book-btn" type="button">Book This Yacht <span aria-hidden="true">↗</span></button>
+          <button class="button button-glass" id="yacht-modal-sound-btn" type="button">Unmute Tour Audio 🔊</button>
+        </div>
+      </div>
+    </div>
   </dialog>
 </body>
 </html>

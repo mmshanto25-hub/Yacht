@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070f17">
+  <meta name="description" content="Explore the Aventis luxury superyacht charter collection. High-definition autoplaying video tours of 39ft to 400ft mega yachts, full technical specifications, and charter rates.">
+  <title>The Fleet — Aventis Luxury Superyachts &amp; Mega Yachts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/fleet.css">
+  <link rel="stylesheet" href="css/modals.css">
+
+  <!-- Modular Scripts -->
+  <script src="js/global.js" defer></script>
+  <script src="js/video-manager.js" defer></script>
+  <script src="js/fleet-data.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Top Ocean Ticker -->
+  <div class="top-status-bar" aria-label="Global charter status">
+    <div class="container status-bar-inner">
+      <span class="status-item"><i class="status-beacon"></i> 24/7 Global Brokerage Concierge</span>
+      <span class="status-item">Newport <strong>41°29′N 71°19′W</strong> • 68°F Calm</span>
+      <span class="status-item">Monaco <strong>43°44′N 7°25′E</strong> • 74°F Fair</span>
+      <span class="status-item status-badge-hot">7 Featured Mega Yachts Active</span>
+      <a class="status-link" href="contact.html">Speak to a Broker ↗</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="main-header">
+    <a class="brand" href="index.html" aria-label="Aventis Yacht Charters home">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="24" cy="24" r="3" fill="currentColor"/>
+        <path d="M24 3v11m0 20v11M3 24h11m20 0h11M9.15 9.15l7.78 7.78m14.14 14.14 7.78 7.78m0-29.7-7.78 7.78M16.93 31.07l-7.78 7.78" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="m24 9 3 12-3 3-3-3 3-12Zm15 15-12 3-3-3 3-3 12 3ZM24 39l-3-12 3-3 3 3-3 12ZM9 24l12-3 3 3-3 3-12-3Z" fill="currentColor" opacity=".78"/>
+      </svg>
+      <span class="brand-type"><strong>AVENTIS</strong><small>YACHT CHARTERS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="fleet.html" class="active">Fleet</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-open" type="button" aria-label="Open yacht search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+      </button>
+      <button class="button button-gold header-book" type="button" data-open-booking>Book a Yacht <span aria-hidden="true">↗</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="index.html">Home</a>
+      <a href="fleet.html" class="active">Fleet</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="experience.html">Experience</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="button button-gold" type="button" data-open-booking>Book a Yacht <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- SUBPAGE HERO BANNER -->
+    <section class="subpage-hero" aria-label="Aventis Fleet Showcase">
+      <video class="subpage-hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="Public/Fleet/Sunseeker%2076%202024%20_%20Lafortune%20Yachts%281080P_60FPS%29.mp4" type="video/mp4">
+      </video>
+      <div class="subpage-hero-shade"></div>
+      <div class="container subpage-hero-content">
+        <p class="eyebrow"><span></span>The Curated Portfolio</p>
+        <h1>Vessels of Distinction</h1>
+        <p>From 400-foot multi-deck German mega yachts to swift Italian open cruisers, each yacht in our fleet has been hand-inspected to guarantee peerless luxury, safety, and hospitality.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a class="button button-gold" href="#fleet-grid">Browse All 7 Vessels <span aria-hidden="true">↓</span></a>
+          <button class="button button-glass" type="button" data-open-booking>Inquire With a Broker</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN FLEET SHOWCASE -->
+    <section class="fleet-section section-dark" id="fleet-grid">
+      <div class="container">
+        <div class="fleet-toolbar">
+          <div class="fleet-tabs" role="group" aria-label="Filter yachts by category">
+            <button class="fleet-tab active" type="button" data-filter="all" aria-pressed="true">All vessels <span class="tab-count">(7)</span></button>
+            <button class="fleet-tab" type="button" data-filter="mega" aria-pressed="false">Mega Yachts 100M+ <span class="tab-count">(2)</span></button>
+            <button class="fleet-tab" type="button" data-filter="motor" aria-pressed="false">Superyachts &amp; Motor <span class="tab-count">(4)</span></button>
+            <button class="fleet-tab" type="button" data-filter="day-cruiser" aria-pressed="false">Day Cruisers &amp; Chase <span class="tab-count">(1)</span></button>
+          </div>
+          <div class="fleet-toolbar-meta">
+            <span class="video-auto-badge"><span class="pulse-dot"></span> Live Video Previews Playing</span>
+          </div>
+        </div>
+
+        <!-- 7 AUTOPLAYING VIDEO CARDS -->
+        <div class="fleet-grid">
+
+          <!-- 1. KISMET -->
+          <article class="yacht-card reveal" data-category="mega" data-yacht-id="kismet">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="KISMET mega yacht video tour">
+                <source src="Public/Fleet/_150M%20KISMET%20Mega%20Yacht%20by%20Lurssen%20Yachts%20_%20Luxury%20Mega%20Yacht%20for%20Charter%20_%20Mania%20Luxury(1080P_HD).mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Mega Yacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for KISMET" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="kismet" aria-label="View technical details for KISMET">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>KISMET</h3>
+                <span class="yacht-builder-tag">Lürssen</span>
+              </div>
+              <p class="yacht-specs">400 FT / 122M <i>•</i> 12 GUESTS <i>•</i> 9 STATEROOMS <i>•</i> CREW OF 36</p>
+              <p class="yacht-summary">The undisputed pinnacle of charter superyachts. Features a multi-level wellness spa, commercial helipad, outdoor cinema, and underwater Nemo lounge.</p>
+              <div class="yacht-highlights">
+                <span>Helipad</span>
+                <span>Hammam Spa</span>
+                <span>Subsea Lounge</span>
+                <span>Cinema</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$3,000,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="kismet">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="KISMET">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. LANA -->
+          <article class="yacht-card reveal" data-category="mega" data-yacht-id="lana">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="LANA superyacht video tour">
+                <source src="Public/Fleet/Inside%20LANA%20_%20107m%20Benetti%20Luxury%20Superyacht%20Tour(1080P_HD).mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Mega Yacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for LANA" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="lana" aria-label="View technical details for LANA">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>LANA</h3>
+                <span class="yacht-builder-tag">Benetti</span>
+              </div>
+              <p class="yacht-specs">351 FT / 107M <i>•</i> 12 GUESTS <i>•</i> 8 STATEROOMS <i>•</i> CREW OF 33</p>
+              <p class="yacht-summary">One of Benetti's grandest flagships with 2.7m ceiling heights, heated sundeck swimming pool, grand piano salon, and expansive fold-out sea terraces.</p>
+              <div class="yacht-highlights">
+                <span>Sundeck Pool</span>
+                <span>Grand Piano</span>
+                <span>Beach Club</span>
+                <span>Full Hammam</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$1,900,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="lana">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="LANA">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. ENERGY -->
+          <article class="yacht-card reveal" data-category="motor" data-yacht-id="energy">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="ENERGY superyacht video tour">
+                <source src="Public/Fleet/ENERGY%20_%2077.80M_255_2___%20Amels%20-%20Yacht%20for%20Sale(1080P_HD).mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Superyacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for ENERGY" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="energy" aria-label="View technical details for ENERGY">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>ENERGY</h3>
+                <span class="yacht-builder-tag">Amels • Espen Øino</span>
+              </div>
+              <p class="yacht-specs">255 FT / 78M <i>•</i> 12 GUESTS <i>•</i> 7 STATEROOMS <i>•</i> CREW OF 27</p>
+              <p class="yacht-summary">Dutch pedigree styled by Espen Øino. Dedicated private owner's deck with Jacuzzi, wellness sauna, gymnasium, and whisper-quiet hybrid navigation.</p>
+              <div class="yacht-highlights">
+                <span>Owner's Deck</span>
+                <span>Sauna &amp; Gym</span>
+                <span>Helipad T&amp;G</span>
+                <span>Hybrid Drive</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$1,150,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="energy">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="ENERGY">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. M/Y ONYX -->
+          <article class="yacht-card reveal" data-category="motor" data-yacht-id="onyx">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="M/Y ONYX Riva Dolcevita video tour">
+                <source src="Public/Fleet/M_Y%20ONYX%20-%20110_%20Riva%20Dolcevita%20Yacht%20For%20Sale(1080P_HD).mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Motor Yacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for M/Y ONYX" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="onyx" aria-label="View technical details for M/Y ONYX">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>M/Y ONYX</h3>
+                <span class="yacht-builder-tag">Riva 110' Dolcevita</span>
+              </div>
+              <p class="yacht-specs">110 FT / 33.5M <i>•</i> 10 GUESTS <i>•</i> 5 CABINS <i>•</i> CREW OF 5</p>
+              <p class="yacht-summary">The ultimate expression of Italian Riva elegance. Floor-to-ceiling glass salon, panoramic flybridge with bar, Williams jet tender, and 26-knot performance.</p>
+              <div class="yacht-highlights">
+                <span>Panoramic Salon</span>
+                <span>Flybridge Bar</span>
+                <span>Jet Tender</span>
+                <span>26 Knots</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$145,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="onyx">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="M/Y ONYX">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. SUNSEEKER 88 YACHT -->
+          <article class="yacht-card reveal" data-category="motor" data-yacht-id="sunseeker-88">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="Sunseeker 88 video tour">
+                <source src="Public/Fleet/Sunseeker%2088%20Yacht(1080P_HD).mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Motor Yacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for Sunseeker 88" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="sunseeker-88" aria-label="View technical details for Sunseeker 88">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>Sunseeker 88 Yacht</h3>
+                <span class="yacht-builder-tag">Sunseeker UK</span>
+              </div>
+              <p class="yacht-specs">88 FT / 27M <i>•</i> 8 GUESTS <i>•</i> 4 CABINS <i>•</i> CREW OF 4</p>
+              <p class="yacht-summary">British craftsmanship featuring an innovative beach club with X-TEND transformational sunbeds, full-beam owner stateroom, and superb alfresco dining.</p>
+              <div class="yacht-highlights">
+                <span>X-TEND Beach Club</span>
+                <span>Full-Beam Master</span>
+                <span>Alfresco Dining</span>
+                <span>Stabilizers</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$95,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="sunseeker-88">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="Sunseeker 88 Yacht">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. SUNSEEKER 76 YACHT -->
+          <article class="yacht-card reveal" data-category="motor" data-yacht-id="sunseeker-76">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="Sunseeker 76 video tour">
+                <source src="Public/Fleet/Sunseeker%2076%202024%20_%20Lafortune%20Yachts%281080P_60FPS%29.mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Motor Yacht</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for Sunseeker 76" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="sunseeker-76" aria-label="View technical details for Sunseeker 76">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>Sunseeker 76 Yacht</h3>
+                <span class="yacht-builder-tag">Sunseeker UK</span>
+              </div>
+              <p class="yacht-specs">76 FT / 23.6M <i>•</i> 8 GUESTS <i>•</i> 4 CABINS <i>•</i> CREW OF 3</p>
+              <p class="yacht-summary">Peerless 32-knot performance cruiser renowned for bright, open-plan architectural living, foredeck sunbathing lounges, and swift island-hopping agility.</p>
+              <div class="yacht-highlights">
+                <span>32 Knots Sprint</span>
+                <span>Foredeck Lounge</span>
+                <span>Swim Platform</span>
+                <span>Seabobs</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$75,000 <small>/ week + expenses</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="sunseeker-76">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="Sunseeker 76 Yacht">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. RIVA RIVAMARE -->
+          <article class="yacht-card reveal" data-category="day-cruiser" data-yacht-id="rivamare">
+            <div class="yacht-media">
+              <video class="yacht-card-video" autoplay muted loop playsinline preload="auto" aria-label="Riva Rivamare video tour">
+                <source src="Public/Fleet/Luxury%20Yacht%20-%20Riva%20Rivamare%20-%20Ferretti%20Group%281080P_HD%29.mp4" type="video/mp4">
+              </video>
+              <div class="media-overlay"></div>
+              <span class="yacht-category">Day Cruiser</span>
+              <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+              <button class="card-sound-toggle" type="button" aria-label="Toggle audio for Riva Rivamare" aria-pressed="false" title="Unmute">
+                <svg class="sound-icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path class="sound-horn" d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+                <span class="sound-text">Sound</span>
+              </button>
+              <button class="yacht-quick-trigger" type="button" data-yacht="rivamare" aria-label="View technical details for Riva Rivamare">
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="yacht-info">
+              <div class="yacht-title-row">
+                <h3>Riva Rivamare</h3>
+                <span class="yacht-builder-tag">Ferretti Group</span>
+              </div>
+              <p class="yacht-specs">39 FT / 11.9M <i>•</i> 6 GUESTS <i>•</i> 1 CABIN <i>•</i> CREW OF 2</p>
+              <p class="yacht-summary">The modern icon of Italian nautical glamour. Double-curved mahogany foredeck, fold-down beach terrace, and twin Volvo Penta power for sunset champagne charters.</p>
+              <div class="yacht-highlights">
+                <span>Mahogany Foredeck</span>
+                <span>Fold-Down Beach</span>
+                <span>Champagne Bar</span>
+                <span>40 Knots</span>
+              </div>
+              <div class="yacht-rate">
+                <span>Charter from</span>
+                <strong>$28,000 <small>/ week (Day rates available)</small></strong>
+              </div>
+              <div class="yacht-card-actions">
+                <button class="button button-gold-sm" type="button" data-yacht="rivamare">Tour &amp; Specs <span aria-hidden="true">↗</span></button>
+                <button class="button button-glass-sm" type="button" data-book-yacht="Riva Rivamare">Book Yacht</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- FLEET SPECIFICATIONS MATRIX -->
+        <div class="fleet-matrix-wrap reveal">
+          <div class="matrix-header">
+            <div>
+              <p class="eyebrow"><span></span>Side-by-side comparison</p>
+              <h3>Fleet Specifications Matrix</h3>
+            </div>
+            <p class="matrix-note">Detailed comparisons for discerning charterers. All vessels include professional licensed crew and bespoke catering.</p>
+          </div>
+          <div class="matrix-table-scroll">
+            <table class="fleet-matrix-table" aria-label="Fleet comparison table">
+              <thead>
+                <tr>
+                  <th scope="col">Vessel</th>
+                  <th scope="col">Builder</th>
+                  <th scope="col">Length</th>
+                  <th scope="col">Guests</th>
+                  <th scope="col">Cabins</th>
+                  <th scope="col">Crew</th>
+                  <th scope="col">Speed</th>
+                  <th scope="col">Key Amenity</th>
+                  <th scope="col">Charter Rate</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><strong>KISMET</strong></th>
+                  <td>Lürssen</td>
+                  <td>122m / 400ft</td>
+                  <td>12</td>
+                  <td>9 Staterooms</td>
+                  <td>36 Crew</td>
+                  <td>18.5 Knots</td>
+                  <td>Helipad &amp; Subsea Spa</td>
+                  <td>$3,000,000 / wk</td>
+                  <td><button class="matrix-btn" type="button" data-yacht="kismet">Details</button></td>
+                </tr>
+                <tr>
+                  <th scope="row"><strong>LANA</strong></th>
+                  <td>Benetti</td>
+                  <td>107m / 351ft</td>
+                  <td>12</td>
+                  <td>8 Staterooms</td>
+                  <td>33 Crew</td>
+                  <td>18.5 Knots</td>
+                  <td>Sundeck Pool &amp; Hammam</td>
+                  <td>$1,900,000 / wk</td>
+                  <td><button class="matrix-btn" type="button" data-yacht="lana">Details</button></td>
+                </tr>
+                <tr>
+                  <th scope="row"><strong>ENERGY</strong></th>
+                  <td>Amels</td>
+                  <td>78m / 255ft</td>
+                  <td>12</td>
+                  <td>7 Staterooms</td>
+                  <td>27 Crew</td>
+                  <td>17 Knots</td>
+                  <td>Private Owner's Deck</td>
+                  <td>$1,150,000 / wk</td>
+                  <td><button class="matrix-btn" type="button" data-yacht="energy">Details</button></td>
+                </tr>
+                <tr>
+                  <th scope="row"><strong>M/Y ONYX</strong></th>
+                  <td>Riva</td>
+                  <td>33.5m / 110ft</td>
+                  <td>10</td>
+                  <td>5 Cabins</td>
+                  <td>5 Crew</td>
+                  <td>26 Knots</td>
+                  <td>Panoramic Glass Salon</td>
+                  <td>$145,000 / wk</td>
+                  <td><button class="matrix-btn" type="button" data-yacht="onyx">Details</button></td>
+                </tr>
+                <tr>
+                  <th scope="row"><strong>Sunseeker 88</strong></th>
+                  <td>Sunseeker</td>
+                  <td>27m / 88ft</td>
+                  <td>8</td>
+                  <td>4 Cabins</td>
+                  <td>4 Crew</td>
+                  <td>28 Knots</td>
+                  <td>X-TEND Beach Lounge</td>
+                  <td>$95,000 / wk</td>
+                  <td><button class="matrix-btn" type="button" data-yacht="sunseeker-88">Details</button></td>
+                </tr>
+                <tr>
+                  <th scope="row"><strong>Sunseeker 76</strong></th>
+                  <td>Sunseeker</td>
+                  <td>23.6m / 76ft</td>
+                  <td>8</td>
+                  <td>4 Cabins</td>
+                  <td>3 Crew</td>
+                  <td>32 Knots</td>
+                  <td>Fast Island Cruiser</td>
+                  <td>$75,000 / wk</td>
+                  <td><button class="matrix-btn" type="button" data-yacht="sunseeker-76">Details</button></td>
+                </tr>
+                <tr>
+                  <th scope="row"><strong>Riva Rivamare</strong></th>
+                  <td>Riva Ferretti</td>
+                  <td>11.9m / 39ft</td>
+                  <td>6</td>
+                  <td>1 Cabin</td>
+                  <td>2 Crew</td>
+                  <td>40 Knots</td>
+                  <td>Mahogany Day Cruiser</td>
+                  <td>$28,000 / wk</td>
+                  <td><button class="matrix-btn" type="button" data-yacht="rivamare">Details</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- PRICING & APA EXPLAINER -->
+        <div style="margin-top: 80px;">
+          <div class="section-heading centered reveal">
+            <p class="eyebrow"><span></span>Charter Transparency</p>
+            <h2>Understanding Charter Terms</h2>
+            <p>We believe in absolute financial clarity. Here is how luxury superyacht charter pricing is structured globally.</p>
+          </div>
+          <div class="pricing-guide-grid reveal">
+            <div class="pricing-guide-card">
+              <h4>1. Base Charter Rate</h4>
+              <p>Covers the hire of the yacht, all licensed maritime crew, insurance for marine risks, and standard vessel amenities for the charter period.</p>
+            </div>
+            <div class="pricing-guide-card">
+              <h4>2. APA (Advance Provisioning Allowance)</h4>
+              <p>Typically 30% to 35% of the base charter fee. Held by the captain to cover fuel, guest provisions, fine wines, dockage fees, and communications. Any unused funds are fully refunded at checkout.</p>
+            </div>
+            <div class="pricing-guide-card">
+              <h4>3. VAT &amp; Gratuity</h4>
+              <p>Local VAT depends on cruising waters (e.g. France, Italy, Greece). Crew gratuity is customary at 10%–15% of the base rate, given at your discretion for exceptional service.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- BROKERAGE BANNER -->
+        <div class="brokerage-banner reveal">
+          <div class="brokerage-banner-content">
+            <span class="broker-badge">Global Off-Market Access</span>
+            <h3>Looking for an Off-Market Superyacht?</h3>
+            <p>Our senior brokers have direct, private access to over 1,400 confidential yachts worldwide that are never listed on public directories.</p>
+          </div>
+          <button class="button button-gold" type="button" data-open-booking>Inquire With a Broker <span aria-hidden="true">↗</span></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHARTER FAQ SECTION -->
+    <section class="section-light" style="padding: 100px 0;">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow eyebrow-dark"><span></span>Answers for Charterers</p>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about planning your private voyage with Aventis.</p>
+        </div>
+        <div class="fleet-faq-grid reveal">
+          <div class="faq-card">
+            <h4>How far in advance should I reserve a yacht?</h4>
+            <p>For peak Mediterranean summer (July–August) or Caribbean holiday season (Christmas–New Year), we strongly advise booking 6 to 9 months in advance to secure top-tier vessels and prime berths.</p>
+          </div>
+          <div class="faq-card">
+            <h4>Can I customize the daily cruising itinerary?</h4>
+            <p>Absolutely. Your itinerary is entirely bespoke. Your captain evaluates wind and sea conditions each morning to navigate you into the calmest anchorages and secluded bays.</p>
+          </div>
+          <div class="faq-card">
+            <h4>How does food and wine selection work?</h4>
+            <p>Four weeks prior to embarking, you complete our confidential Preference Sheet specifying dietary requests, favorite vintages, and culinary preferences for your private Michelin-trained chef.</p>
+          </div>
+          <div class="faq-card">
+            <h4>Are children and families welcome onboard?</h4>
+            <p>Yes. Our crew are exceptionally family-friendly, organizing water sports, treasure hunts, inflatable slides, and child-safe tender adventures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="Aventis Yacht Charters home">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="24" cy="24" r="3" fill="currentColor"/><path d="M24 3v11m0 20v11M3 24h11m20 0h11M9.15 9.15l7.78 7.78m14.14 14.14 7.78 7.78m0-29.7-7.78 7.78M16.93 31.07l-7.78 7.78" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m24 9 3 12-3 3-3-3 3-12Zm15 15-12 3-3-3 3-3 12 3ZM24 39l-3-12 3-3 3 3-3 12ZM9 24l12-3 3 3-3 3-12-3Z" fill="currentColor" opacity=".78"/></svg>
+          <span class="brand-type"><strong>AVENTIS</strong><small>YACHT CHARTERS</small></span>
+        </a>
+        <p>Crafting extraordinary maritime journeys with bespoke itineraries and world-class hospitality since 1988.</p>
+        <div class="accreditations-row">
+          <span class="cert-pill">MYBA Member</span>
+          <span class="cert-pill">IYBA Certified</span>
+          <span class="cert-pill">SYBAss Partner</span>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h2>The Fleet</h2>
+        <a href="fleet.html">All Vessels</a>
+        <a href="fleet.html">Mega Yachts 100M+</a>
+        <a href="fleet.html">Superyachts &amp; Motor</a>
+        <a href="fleet.html">Day Cruisers &amp; Chase</a>
+      </div>
+      <div class="footer-column">
+        <h2>Destinations</h2>
+        <a href="destinations.html">French Riviera &amp; Monaco</a>
+        <a href="destinations.html">Amalfi Coast &amp; Capri</a>
+        <a href="destinations.html">The Bahamas &amp; Exumas</a>
+        <a href="destinations.html">Greek Cyclades</a>
+      </div>
+      <div class="footer-column footer-concierge">
+        <h2>The Gazette</h2>
+        <p>Receive curated seasonal itineraries and off-market fleet releases.</p>
+        <form class="newsletter-form">
+          <label class="visually-hidden" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Your email address" required>
+          <button type="submit" aria-label="Sign up for the newsletter">→</button>
+        </form>
+        <p class="form-status" aria-live="polite"></p>
+        <a href="tel:+18005559224">+1 (800) 555-YACHT</a>
+        <a href="mailto:charter@aventisyachts.com">charter@aventisyachts.com</a>
+        <span>Commercial Wharf, Newport, RI</span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Aventis Yacht Charters. All rights reserved.</span>
+      <div>
+        <a href="contact.html">Privacy Policy</a>
+        <a href="contact.html">Terms of Charter</a>
+        <a href="contact.html">Maritime Safety</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <dialog class="site-dialog search-dialog" id="search-modal" aria-labelledby="search-title">
+    <button class="dialog-close" type="button" aria-label="Close search">×</button>
+    <div class="dialog-inner">
+      <p class="eyebrow"><span></span>Find your next escape</p>
+      <h2 id="search-title">Where will the sea take you?</h2>
+      <form class="search-form">
+        <label class="visually-hidden" for="yacht-search">Search yachts and destinations</label>
+        <input id="yacht-search" type="search" placeholder="Try “KISMET”, “Bahamas”, “Riva”, or “Monaco”">
+        <button type="submit" aria-label="Search">↗</button>
+      </form>
+      <div class="search-chips">
+        <button type="button">KISMET</button>
+        <button type="button">LANA</button>
+        <button type="button">ENERGY</button>
+        <button type="button">M/Y ONYX</button>
+        <button type="button">Sunseeker 88</button>
+        <button type="button">Rivamare</button>
+      </div>
+      <p class="search-result" aria-live="polite"></p>
+    </div>
+  </dialog>
+
+  <dialog class="site-dialog booking-dialog" id="booking-modal" aria-labelledby="booking-title">
+    <button class="dialog-close" type="button" aria-label="Close booking request">×</button>
+    <div class="dialog-inner">
+      <p class="eyebrow"><span></span>Your journey begins here</p>
+      <h2 id="booking-title">Speak with a Charter Broker</h2>
+      <p class="dialog-intro">Tell us a little about the voyage you have in mind. We will curate the ideal yacht, captain, and itinerary.</p>
+      <form class="booking-form">
+        <label>
+          <span>Preferred Vessel</span>
+          <select name="yacht" id="booking-yacht-select">
+            <option value="">Select a yacht</option>
+            <option value="KISMET">KISMET (400 FT / 122M Mega Yacht)</option>
+            <option value="LANA">LANA (351 FT / 107M Mega Yacht)</option>
+            <option value="ENERGY">ENERGY (255 FT / 78M Superyacht)</option>
+            <option value="M/Y ONYX">M/Y ONYX (110 FT Riva Dolcevita)</option>
+            <option value="Sunseeker 88 Yacht">Sunseeker 88 Yacht</option>
+            <option value="Sunseeker 76 Yacht">Sunseeker 76 Yacht</option>
+            <option value="Riva Rivamare">Riva Rivamare (39 FT Day Cruiser)</option>
+            <option value="Open to recommendations">Open to recommendations</option>
+          </select>
+        </label>
+        <label>
+          <span>Destination or Region</span>
+          <input name="destination" placeholder="Where would you like to sail?" required>
+        </label>
+        <div class="form-row">
+          <label>
+            <span>Preferred Dates</span>
+            <input name="dates" placeholder="e.g. Summer 2026 or specific week">
+          </label>
+          <label>
+            <span>Number of Guests</span>
+            <input name="guests" type="number" min="1" max="36" placeholder="e.g. 10">
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            <span>Your Name</span>
+            <input name="name" placeholder="Full name" required>
+          </label>
+          <label>
+            <span>Email Address</span>
+            <input name="email" type="email" placeholder="name@domain.com" required>
+          </label>
+        </div>
+        <label>
+          <span>Special Requests</span>
+          <textarea name="requests" rows="3" placeholder="Share anything that would make it extraordinary (private aviation, dive master, dietary requirements...)"></textarea>
+        </label>
+        <button class="button button-gold" type="submit">Prepare my inquiry <span aria-hidden="true">↗</span></button>
+        <p class="form-status" aria-live="polite">This preview prepares your bespoke inquiry.</p>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="site-dialog yacht-dialog" id="yacht-modal" aria-labelledby="yacht-title">
+    <button class="dialog-close" type="button" aria-label="Close yacht details">×</button>
+    <div class="yacht-dialog-content">
+      <div class="yacht-modal-media-wrap">
+        <video id="yacht-modal-video" autoplay loop playsinline muted controls preload="auto">
+          <source src="" type="video/mp4">
+        </video>
+        <div class="yacht-modal-media-overlay">
+          <span class="yacht-category" id="yacht-modal-category"></span>
+          <span class="yacht-badge-live"><span class="pulse-dot"></span> LIVE TOUR</span>
+        </div>
+      </div>
+      <div class="yacht-dialog-copy">
+        <p class="eyebrow"><span></span>In the Aventis collection</p>
+        <h2 id="yacht-title"></h2>
+        <span class="yacht-modal-builder" id="yacht-modal-builder"></span>
+        <div class="yacht-modal-specs-grid" id="yacht-modal-specs"></div>
+        <p id="yacht-modal-description"></p>
+        <div class="yacht-modal-features" id="yacht-modal-features"></div>
+        <div class="yacht-modal-rate-box">
+          <span class="modal-rate-label">Charter Rate</span>
+          <strong id="yacht-modal-rate"></strong>
+        </div>
+        <div class="yacht-modal-buttons">
+          <button class="button button-gold" id="yacht-modal-book-btn" type="button">Book This Yacht <span aria-hidden="true">↗</span></button>
+          <button class="button button-glass" id="yacht-modal-sound-btn" type="button">Unmute Tour Audio 🔊</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
+

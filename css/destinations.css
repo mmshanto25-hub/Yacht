@@ -1,0 +1,286 @@
+/* ==========================================================================
+   DESTINATIONS PAGE SPECIFIC STYLES
+   ========================================================================== */
+
+.destinations-section { padding: 110px 0 100px; }
+.destinations-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+.destination-tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.dest-tab {
+  padding: 8px 16px;
+  border: 1px solid rgba(7, 15, 23, 0.15);
+  border-radius: 999px;
+  background: white;
+  color: var(--ink);
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.dest-tab:hover, .dest-tab.active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.slider-controls { display: flex; gap: 10px; }
+.slider-button {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(7, 15, 23, 0.15);
+  border-radius: 50%;
+  background: white;
+  color: var(--ink);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.slider-button:hover {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: white;
+}
+
+.destinations-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: -10px -16px -30px;
+  padding: 10px 16px 30px;
+}
+.destinations-slider {
+  display: grid;
+  grid-auto-columns: calc((100% - 60px) / 3);
+  grid-auto-flow: column;
+  gap: 28px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.destinations-slider::-webkit-scrollbar { display: none; }
+
+.destination-card {
+  position: relative;
+  min-width: 0;
+  aspect-ratio: 0.78;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #0e1b28;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+.destination-card > img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease);
+}
+.destination-card:hover > img { transform: scale(1.06); }
+.destination-shade {
+  position: absolute;
+  inset: 20% 0 0;
+  background: linear-gradient(transparent, rgba(7, 15, 23, 0.88) 75%, rgba(7, 15, 23, 0.95));
+}
+.destination-info {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+  left: 22px;
+  color: white;
+}
+.dest-region-tag {
+  display: block;
+  color: var(--gold-light);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.destination-info h3 {
+  margin: 0 35px 6px 0;
+  color: white;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+.dest-desc {
+  margin: 0 0 12px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.dest-meta {
+  display: flex;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 9px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 8px;
+}
+.destination-info a {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 50%;
+  font-size: 15px;
+  transition: all 0.25s;
+}
+.destination-info a:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: white;
+}
+
+/* ITINERARY FEATURE CARDS */
+.itinerary-feature-card {
+  margin-top: 50px;
+  background: white;
+  border: 1px solid rgba(7, 15, 23, 0.1);
+  border-radius: 8px;
+  padding: 44px;
+  box-shadow: var(--shadow-md);
+}
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 56px;
+  align-items: start;
+}
+.itinerary-copy h3 {
+  font-size: 34px;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+.itinerary-copy p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.itinerary-stats-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+  padding: 18px 0;
+  border-top: 1px solid rgba(7, 15, 23, 0.1);
+  border-bottom: 1px solid rgba(7, 15, 23, 0.1);
+}
+.itinerary-stat strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 24px;
+  color: var(--ink);
+}
+.itinerary-stat span {
+  font-size: 9px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.itinerary-days-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+.itinerary-days-list li {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(7, 15, 23, 0.06);
+}
+.day-num {
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: #a57d43;
+  text-transform: uppercase;
+}
+.day-content h4 {
+  margin: 0 0 3px;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.day-content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+/* SEASONAL CALENDAR TABLE */
+.season-calendar-wrap {
+  margin-top: 60px;
+  padding: 40px;
+  background: var(--navy-raised);
+  border: 1px solid rgba(197, 155, 95, 0.28);
+  border-radius: 8px;
+}
+.season-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+  font-size: 12px;
+  color: white;
+}
+.season-table th, .season-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.season-table th {
+  color: var(--gold-light);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.badge-optimal {
+  padding: 3px 8px;
+  background: rgba(45, 212, 191, 0.15);
+  border: 1px solid #2dd4bf;
+  border-radius: 999px;
+  color: #2dd4bf;
+  font-size: 9px;
+}
+.badge-shoulder {
+  padding: 3px 8px;
+  background: rgba(197, 155, 95, 0.15);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  color: var(--gold-light);
+  font-size: 9px;
+}
+
+@media (max-width: 1279px) {
+  .destinations-slider { grid-auto-columns: calc((100% - 28px) / 2); }
+  .itinerary-grid { grid-template-columns: 1fr; gap: 36px; }
+}
+
+@media (max-width: 768px) {
+  .destinations-slider { grid-auto-columns: 84%; gap: 16px; }
+  .itinerary-feature-card { padding: 26px 20px; }
+  .season-calendar-wrap { padding: 24px 18px; }
+}
+
