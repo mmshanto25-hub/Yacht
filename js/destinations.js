@@ -10,6 +10,17 @@
   const destTabs = document.querySelectorAll(".dest-tab");
   const destCards = document.querySelectorAll(".destination-card");
 
+  document.querySelectorAll(".destination-card-video[data-video-playlist]").forEach((video) => {
+    const sources = Array.from(video.querySelectorAll("source"), (source) => source.src);
+    let sourceIndex = 0;
+
+    video.addEventListener("ended", () => {
+      sourceIndex = (sourceIndex + 1) % sources.length;
+      video.src = sources[sourceIndex];
+      video.play().catch(() => {});
+    });
+  });
+
   destTabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       const filter = tab.dataset.destFilter;
@@ -29,4 +40,3 @@
     destSlider?.scrollBy({ left: destSlider.clientWidth * 0.75, behavior: "smooth" });
   });
 })();
-
