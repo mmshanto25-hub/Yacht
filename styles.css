@@ -78,6 +78,8 @@ h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.025em; l
 .hero-copy { max-width: 470px; margin: 16px 0 25px auto; color: rgba(255,255,255,.94); font-size: 13px; line-height: 1.7; text-shadow: 0 2px 12px rgba(0,0,0,.6); }
 .hero-buttons { display: flex; justify-content: flex-end; gap: 11px; }
 .hero-hud { position: absolute; right: 6.25vw; bottom: 34px; left: 6.25vw; display: flex; align-items: center; justify-content: space-between; }
+.sound-icon { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.sound-mute { display: none; }
 .location { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 9px; font-weight: 600; letter-spacing: .17em; text-transform: uppercase; text-shadow: 0 2px 10px rgba(0,0,0,.65); }
 .location i { width: 6px; height: 6px; border-radius: 50%; background: var(--gold-light); box-shadow: 0 0 10px var(--gold); }
 .stage-control { display: flex; align-items: center; gap: 14px; color: rgba(255,255,255,.77); font-size: 10px; font-weight: 600; letter-spacing: .1em; }
@@ -140,12 +142,14 @@ h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.025em; l
 
 .experience-section { display: grid; grid-template-columns: 1fr 1.05fr; min-height: 690px; }
 .experience-image { position: relative; min-height: 590px; overflow: hidden; background: #536c72; }
-.experience-image > img { position: absolute; inset: 0; height: 100%; object-fit: cover; }
-.experience-image::after { position: absolute; inset: 0; content: ""; background: linear-gradient(0deg,rgba(7,15,23,.24),transparent 35%); pointer-events: none; }
-.experience-play { position: absolute; z-index: 1; top: 50%; left: 50%; display: grid; width: 68px; height: 68px; place-items: center; transform: translate(-50%,-50%); border: 1px solid rgba(255,255,255,.8); border-radius: 50%; background: rgba(197,155,95,.85); color: white; cursor: pointer; box-shadow: 0 0 0 12px rgba(197,155,95,.2),0 0 0 24px rgba(197,155,95,.12); transition: box-shadow .3s, transform .3s; }
-.experience-play:hover { transform: translate(-50%,-50%) scale(1.08); box-shadow: 0 0 0 16px rgba(197,155,95,.2),0 0 0 31px rgba(197,155,95,.12); }
-.experience-play span { margin-left: 3px; font-size: 13px; }
-.experience-caption { position: absolute; z-index: 1; bottom: 30px; left: 36px; color: white; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; }
+.experience-image > img { position: absolute; z-index: 0; inset: 0; height: 100%; object-fit: cover; }
+.experience-video { position: absolute; z-index: 1; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.experience-image::after { position: absolute; z-index: 2; inset: 0; content: ""; background: linear-gradient(0deg,rgba(7,15,23,.24),transparent 35%); pointer-events: none; }
+.experience-sound-toggle { position: absolute; z-index: 3; top: 24px; right: 24px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 38px; padding: 8px 13px; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; background: rgba(7,15,23,.46); color: white; font-size: 8px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; backdrop-filter: blur(8px); cursor: pointer; transition: border-color .25s, background .25s, color .25s; }
+.experience-sound-toggle:hover, .experience-sound-toggle[aria-pressed="true"] { border-color: var(--gold-light); background: rgba(7,15,23,.72); color: var(--gold-light); }
+.experience-sound-toggle[aria-pressed="true"] .sound-waves { display: none; }
+.experience-sound-toggle[aria-pressed="true"] .sound-mute { display: block; }
+.experience-caption { position: absolute; z-index: 3; bottom: 30px; left: 36px; color: white; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; text-shadow: 0 2px 10px rgba(0,0,0,.55); }
 .experience-copy { display: flex; align-items: center; padding: 78px clamp(40px,7vw,105px); background: var(--cream-card); }
 .experience-inner { width: 100%; max-width: 530px; }
 .experience-copy h2 { font-size: clamp(39px,4.1vw,56px); }
@@ -369,6 +373,7 @@ h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.025em; l
   .fleet-tab { padding: 8px 11px; font-size: 8px; }
   .yacht-rate { align-items: flex-start; flex-direction: column; }
   .experience-image { min-height: 340px; }
+  .experience-sound-toggle { top: 15px; right: 15px; }
   .experience-copy { padding: 58px 20px; }
   .experience-play { width: 58px; height: 58px; }
   .destinations-slider { grid-auto-columns: 92%; gap: 14px; }
@@ -395,5 +400,6 @@ h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -.025em; l
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
   .hero-video { display: none; }
+  .experience-video { display: none; }
   #hero-canvas { display: none; }
 }

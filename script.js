@@ -4,12 +4,32 @@
   const header = document.querySelector("#main-header");
   const runway = document.querySelector("#hero-runway");
   const canvas = document.querySelector("#hero-canvas");
-  const video = document.querySelector(".hero-video");
+  const experienceVideo = document.querySelector(".experience-video");
+  const soundToggle = document.querySelector(".experience-sound-toggle");
   const context = canvas?.getContext("2d");
   const stages = [...document.querySelectorAll(".hero-stage")];
   const hudStages = [...document.querySelectorAll("[data-hud]")];
   const progressBar = document.querySelector("#stage-progress");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reduceMotion) experienceVideo?.pause();
+  soundToggle?.addEventListener("click", async () => {
+    experienceVideo.muted = !experienceVideo.muted;
+    soundToggle.setAttribute("aria-pressed", String(!experienceVideo.muted));
+    soundToggle.setAttribute("aria-label", experienceVideo.muted ? "Unmute experience video" : "Mute experience video");
+    soundToggle.querySelector("span").textContent = experienceVideo.muted ? "Sound off" : "Sound on";
+    if (experienceVideo.paused) {
+      try {
+        await experienceVideo.play();
+      } catch (error) {
+        experienceVideo.muted = true;
+        soundToggle.setAttribute("aria-pressed", "false");
+        soundToggle.setAttribute("aria-label", "Unmute experience video");
+        soundToggle.querySelector("span").textContent = "Sound off";
+        console.error("The experience video could not be played.", error);
+      }
+    }
+  });
 
   let viewportWidth = window.innerWidth;
   let viewportHeight = window.innerHeight;

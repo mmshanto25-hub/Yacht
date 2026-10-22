@@ -175,7 +175,13 @@
     <section class="experience-section" id="experience">
       <div class="experience-image">
         <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1400&q=85" alt="Clear turquoise water around a secluded island" loading="lazy">
-        <button class="experience-play" type="button" data-open-story aria-label="Discover the Aventis experience"><span>▶</span></button>
+        <video class="experience-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=1400&q=85" aria-hidden="true" tabindex="-1">
+          <source src="Public/M_Y%20ONYX%20-%20110_%20Riva%20Dolcevita%20Yacht%20For%20Sale%281080P_HD%29.mp4" type="video/mp4">
+        </video>
+        <button class="experience-sound-toggle" type="button" aria-label="Unmute experience video" aria-pressed="false">
+          <svg class="sound-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/><path class="sound-mute" d="m16 9 5 6m0-6-5 6"/></svg>
+          <span>Sound off</span>
+        </button>
         <span class="experience-caption">The world, on your terms</span>
       </div>
       <div class="experience-copy">
